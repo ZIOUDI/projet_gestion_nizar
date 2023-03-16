@@ -5,15 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComposantsComponent } from './composants/composants.component';
 import { ServicesComponent } from './services/services.component';
-import { PagesComponent } from './pages/pages.component';
-import { PageInscriptionComponent } from './pages/page-inscription/page-inscription.component';
-import { PageLoginComponent } from './pages/page-login/page-login.component';
+import { PagesComponent } from './composants/pages/pages.component';
+import { PageInscriptionComponent } from './composants/pages/page-inscription/page-inscription.component';
+import { PageLoginComponent } from './composants/pages/page-login/page-login.component';
 import { MaterialModule } from './material.model';
 
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { PageDashboardComponent } from './page-dashboard/page-dashboard.component';
+import { SidebarComponent } from './composants/sidebar/sidebar.component';
+import { HeaderComponent } from './composants/header/header.component';
+import { FooterComponent } from './composants/footer/footer.component';
+import { PageDashboardComponent } from './composants/page-dashboard/page-dashboard.component';
+import { DepotsComponent } from './composants/depots/depots.component';
+import { ProduitsComponent } from './composants/produits/produits.component';
+import { StocksComponent } from './composants/stocks/stocks.component';
+import { EntreesComponent } from './composants/entrees/entrees.component';
+import { SortiesComponent } from './composants/sorties/sorties.component';
+import { InventairesComponent } from './composants/inventaires/inventaires.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { PageDashboardComponent } from './page-dashboard/page-dashboard.componen
   PageDashboardComponent,
     SidebarComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DepotsComponent,
+    ProduitsComponent,
+    StocksComponent,
+    EntreesComponent,
+    SortiesComponent,
+    InventairesComponent
   ],
   imports: [
     BrowserModule,
