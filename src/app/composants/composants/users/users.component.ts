@@ -14,12 +14,18 @@ import { UserService } from 'src/app/services/users/users.service';
 
 export class UsersComponent implements OnInit {
 
+  afficheListUsers: boolean = false;
+  afficheAjoutUser: boolean = false;
+  afficheModifierUser: boolean = false;
+
+
   users: User[] | undefined;
   selectedUser: any;
 
   constructor(@Inject(UserService) private userService: UserService) {}
 
    ngOnInit(): void {
+     this.afficheListUsers = true
      throw new Error('Method not implemented.');
    }
 

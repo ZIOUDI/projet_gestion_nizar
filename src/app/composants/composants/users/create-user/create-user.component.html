@@ -1,20 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- Ajouter les liens vers les fichiers CSS et JS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+     integrity="sha512-LzUfQ2Ud8Bq3knWh5c5P5d87Bxj8DmWzPvKVhpt4grzpsAmfw8uonAfRiZ7rCZYr35Gnsx8uq3Y9y7QUu0FfIg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" 
+    integrity="sha512-01DmGhTxQSP1mVZlxHpjW8fJhPpOFmTfxz+a9mPeW8gsVstgydZZDk/6e03pYw3q6i+lU6SZfUv7NkpQz1u5KQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<form (ngSubmit)="onSubmit()">
-    <label for="id">ID:</label>
-    <input type="number" id="id" [(ngModel)]="id" name="id">
-    <br>
-    <label for="name">Nom:</label>
-    <input type="text" id="name" [(ngModel)]="name" name="name">
-    <br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" [(ngModel)]="email" name="email">
-    <br>
-    <label for="phone">Téléphone:</label>
-    <input type="text" id="phone" [(ngModel)]="phone" name="phone">
-    <br>
-    <label for="role">Rôle:</label>
-    <input type="text" id="role" [(ngModel)]="role" name="role">
-    <br>
-    <button type="submit">Ajouter Utilisateur</button>
-  </form>
-  
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ajouter Utilisateur</h1>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="id">ID:</label>
+          <input type="number" id="id" [(ngModel)]="id" name="id" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" [(ngModel)]="name" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" [(ngModel)]="email" name="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" [(ngModel)]="password" name="password" class="form-control">
+          </div>
+        <div class="form-group">
+          <label for="phone">Téléphone:</label>
+          <input type="text" id="phone" [(ngModel)]="phone" name="phone" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="role">Rôle:</label>
+          <input type="text" id="role" [(ngModel)]="role" name="role" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter  </button>
+      </form>
+    </div>
+  </body>
+</html>

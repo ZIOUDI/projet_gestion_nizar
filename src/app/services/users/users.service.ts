@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+
+
 import { User } from 'src/app/models/user';
 
 @Injectable({
@@ -22,8 +24,19 @@ export class UserService {
     return this.http.get<User>(url);
   }
 
-  addUser(user: User): Observable<User> {
-    return this.http.post<User>(this.usersUrl, user);
+ 
+
+  addUser(user: User): void {
+    // Envoie une requête HTTP POST pour ajouter l'utilisateur à la base de données
+    this.http.post<User>(this.usersUrl, user)
+      .subscribe(
+        (response: User) => {
+          console.log('Utilisateur ajouté :', response);
+        },
+        (error: any) => {
+          console.error('Erreur lors de l\'ajout de l\'utilisateur :', error);
+        }
+      );
   }
 
   updateUser(user: User): Observable<any> {
