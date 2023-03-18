@@ -12,8 +12,10 @@ import { EntreesComponent } from './composants/entrees/entrees.component';
 
 import { SortiesComponent } from './composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
+import { UsersComponent } from './composants/composants/users/users.component';
+import { HeaderDashboardComponent } from './composants/page-dashboard/header-dashboard/header-dashboard.component';
 
-
+ 
 
 const routes: Routes = [
   {path:"",component:PageLoginComponent},
@@ -27,8 +29,10 @@ const routes: Routes = [
   {path:"app-stocks",component:StocksComponent},
   {path:"app-entrees",component:EntreesComponent},
   {path:"app-sorties",component:SortiesComponent},
-  {path:"app-inventaires",component:InventairesComponent}
+  {path:"app-inventaires",component:InventairesComponent},
+  {path:"app-users" ,  component: UsersComponent},
 
+  {path:"app-header-dashboard", component:HeaderDashboardComponent}
 
 ]
 @NgModule({

@@ -1,6 +1,11 @@
 {
+
   "users": [
-    { "id": 1, "name": "nizar" },
-    { "id": 2, "name": "dabbabi" }
+    { "id": 1, "name": "Aymen Yahyaoui", "email":"Aymen@gmail.com" , "role": "Administrateur", "password": "admin" },
+    { "id": 2, "name": "Mohamed Zidi",  "email":"Zidi@gmail.com" , "role": "Manager de stock / Gestionnaires de produits", "password": "manager" },
+    { "id": 3, "name": "Zied Aloui",  "email":"Aloui@gmail.com" , "role": "Vendeur", "password": "seller" },
+    { "id": 4, "name": "Haithem Mednini","email":"Mednini@gmail.com" ,  "role": "Comptable", "password": "accountant" },
+    { "id": 5, "name": "Nader Matmati","email":"Matmati@gmail.com" ,  "role": "Utilisateur standard / Clients", "password": "customer" }
   ]
+
 }

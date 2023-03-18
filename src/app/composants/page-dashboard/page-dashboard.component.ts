@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class PageDashboardComponent {
 
+  afficheDashboardGlobal: boolean = false;
+
+  afficheDashboardDepot: boolean = false;
+  afficheDashboardProduit: boolean = false;
+ 
+  afficheDashboardStock: boolean = false;
+  afficheDashboardEntree: boolean = false;
+  afficheDashboardSortie: boolean = false;
+  afficheDashboardInventaire: boolean = false;
+
+
+    
+
 }

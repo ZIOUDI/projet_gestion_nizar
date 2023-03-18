@@ -4,7 +4,7 @@
     configurer les paramètres de l'application, gérer les produits, les achats et les ventes, ainsi que consulter les rapports et les statistiques.
      Il a tous les droits d'accès et de modification.
 
-    Manager de stock :
+    Manager de stock / Gestionnaires de produits:
      le manager de stock est responsable de la gestion du stock.
      Il peut consulter et modifier la quantité de chaque produit en stock, ajouter ou supprimer des produits, suivre les niveaux de stock et recevoir des alertes lorsque les niveaux sont bas.
       Il peut également générer des rapports de stock pour aider à la prise de décision. Il a des droits d'accès et de modification limités.
@@ -19,5 +19,5 @@
      Il peut consulter les ventes, les achats, les paiements et les factures, et générer des rapports financiers pour aider à la prise de décision.
      Il n'a pas le droit de modifier les produits en stock ou de créer de nouvelles ventes.
 
-    Utilisateur standard :
+    Utilisateur standard / Clients:
     un utilisateur standard peut accéder à l'application pour consulter les produits en stock et les ventes, mais il n'a pas le droit de modifier les produits ou d'ajouter de nouvelles ventes.
