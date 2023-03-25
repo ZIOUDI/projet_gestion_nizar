@@ -24,7 +24,7 @@ import { PageDashboardComponent } from './composants/page-dashboard/page-dashboa
 import { DepotsComponent } from './composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
-import { EntreesComponent } from './composants/entrees/entrees.component';
+import { EntreesComponent } from './composants/composants/entrees/entrees.component';
 import { SortiesComponent } from './composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
 import { UsersComponent } from './composants/composants/users/users.component';

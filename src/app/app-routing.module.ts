@@ -8,7 +8,7 @@ import { PageLoginComponent } from './composants/pages/page-login/page-login.com
 import { DepotsComponent } from './composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
-import { EntreesComponent } from './composants/entrees/entrees.component';
+import { EntreesComponent } from './composants/composants/entrees/entrees.component';
 
 import { SortiesComponent } from './composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
