@@ -29,18 +29,19 @@
       "password": "accountant"
     },
     {
-      "id": 5,
-      "name": "Nader Matmati",
-      "email": "Matmati@gmail.com",
-      "role": "Utilisateur standard / Clients",
-      "password": "customer"
+      "id": 10,
+      "name": "zioudi",
+      "email": "zy.anas@gmail.com",
+      "password": "d2bQaumqrVCF2AE",
+      "phone": "2600110011",
+      "role": "Administrateur"
     },
     {
-      "id": 8,
-      "name": "zioudi",
-      "email": "dsfdsq",
+      "id": 12,
+      "name": "zied",
+      "email": "ayadi@gmail.com",
       "password": "d2bQaumqrVCF2AE",
-      "phone": "23235265656",
+      "phone": "21111111",
       "role": "Administrateur"
     }
   ]

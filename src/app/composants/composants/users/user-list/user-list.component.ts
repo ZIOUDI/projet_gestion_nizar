@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/users/users.service';
 import { UsersComponent } from '../users.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-list',
@@ -17,7 +18,7 @@ export class UserListComponent implements OnInit {
 
 
  
-  constructor(private UserService: UserService, private usersComponent :UsersComponent ) { }
+  constructor(private router: Router,private UserService: UserService, private usersComponent :UsersComponent ) { }
 
 
 
@@ -35,9 +36,20 @@ export class UserListComponent implements OnInit {
 
 
   ouvrirPageNewUser(){
-   this.usersComponent.afficheAjoutUser=true;
-   this.usersComponent.afficheListUsers = false;
-   this.usersComponent.afficheModifierUser = false;
+     
+   this.router.navigate(['/app-users/create-user']);
   }
+
+   
+  ouvrirPageEditUser(id: number): void {
+    this.router.navigate(['/app-users/edit-user', id]);
+  }
+
+  
+  ouvrirPageDeleteUser(id: number): void {
+     this.router.navigate(['/app-users/delete-user', id]);
+  }
+
+  
 
 }

@@ -11,22 +11,10 @@
     
     <app-header></app-header>
 
+    <div class="p-4">
+      <router-outlet></router-outlet>
+    </div>
  
-
-    <ng-container *ngIf="afficheListUsers">
-      <app-user-list></app-user-list>
-    
-    </ng-container>
-
-
-    <ng-container *ngIf="afficheAjoutUser">
-       <app-create-user></app-create-user> 
-    </ng-container>
-
-    <ng-container *ngIf="afficheModifierUser">
-      <app-edit-user></app-edit-user>
-   </ng-container>
-
 
   </div>
 

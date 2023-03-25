@@ -32,7 +32,6 @@ import { CreateUserComponent } from './composants/composants/users/create-user/c
 
 import { UserListComponent } from './composants/composants/users/user-list/user-list.component';
 import { EditUserComponent } from './composants/composants/users/edit-user/edit-user.component';
-import { AddUserComponent } from './composants/composants/users/add-user/add-user.component';
 import { DetailsUserComponent } from './composants/composants/users/details-user/details-user.component';
 import { HeaderDashboardComponent } from './composants/page-dashboard/header-dashboard/header-dashboard.component';
 import { DepotDashboardComponent } from './composants/page-dashboard/depot-dashboard/depot-dashboard.component';
@@ -45,6 +44,7 @@ import { GlobalDashboardComponent } from './composants/page-dashboard/global-das
 
 // services
 import {UserService } from './services/users/users.service';
+import { DeleteUserComponent } from './composants/composants/users/delete-user/delete-user.component';
 
 
 
@@ -72,7 +72,6 @@ import {UserService } from './services/users/users.service';
     CreateUserComponent,
     UserListComponent,
     EditUserComponent,
-    AddUserComponent,
     DetailsUserComponent,
     HeaderDashboardComponent,
     DepotDashboardComponent,
@@ -81,7 +80,8 @@ import {UserService } from './services/users/users.service';
     EntreeDashboardComponent,
     SortieDashboardComponent,
     InventaireDashboardComponent,
-    GlobalDashboardComponent
+    GlobalDashboardComponent,
+    DeleteUserComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,

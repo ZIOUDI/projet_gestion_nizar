@@ -1,4 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/users/users.service';
@@ -22,11 +23,13 @@ export class UsersComponent implements OnInit {
   users: User[] | undefined;
   selectedUser: any;
 
-  constructor(@Inject(UserService) private userService: UserService) {}
+  constructor(private router: Router,@Inject(UserService) private userService: UserService) {}
 
    ngOnInit(): void {
      this.afficheListUsers = true
      throw new Error('Method not implemented.');
+     this.router.navigate(['']);
+
    }
 
  

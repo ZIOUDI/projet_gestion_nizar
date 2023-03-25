@@ -48,8 +48,8 @@
           <td>{{ user.email }}</td>
           <td>{{ user.role }}</td>
           <td>
-            <button class="btn btn-sm btn-outline-primary me-2">Modifier</button>
-            <button class="btn btn-sm btn-outline-danger">Supprimer</button>
+            <button (click)="ouvrirPageEditUser( user.id )" class="btn btn-sm btn-outline-primary me-2">Modifier</button>
+            <button (click)="ouvrirPageDeleteUser( user.id )" class="btn btn-sm btn-outline-danger">Supprimer</button>
           </td>
         </tr>
       </tbody>
