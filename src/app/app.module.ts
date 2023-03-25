@@ -25,7 +25,7 @@ import { DepotsComponent } from './composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
 import { EntreesComponent } from './composants/composants/entrees/entrees.component';
-import { SortiesComponent } from './composants/sorties/sorties.component';
+import { SortiesComponent } from './composants/composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
 import { UsersComponent } from './composants/composants/users/users.component';
 import { CreateUserComponent } from './composants/composants/users/create-user/create-user.component';

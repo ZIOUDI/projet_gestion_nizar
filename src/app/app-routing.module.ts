@@ -10,7 +10,7 @@ import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
 import { EntreesComponent } from './composants/composants/entrees/entrees.component';
 
-import { SortiesComponent } from './composants/sorties/sorties.component';
+import { SortiesComponent } from './composants/composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
 import { UsersComponent } from './composants/composants/users/users.component';
 import { HeaderDashboardComponent } from './composants/page-dashboard/header-dashboard/header-dashboard.component';
