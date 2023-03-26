@@ -24,7 +24,7 @@ import { PageDashboardComponent } from './composants/page-dashboard/page-dashboa
 import { DepotsComponent } from './composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
-import { EntreesComponent } from './composants/composants/entrees/entrees.component';
+import { EntreeComponent } from './composants/composants/entrees/entrees.component';
 import { SortiesComponent } from './composants/composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
 import { UsersComponent } from './composants/composants/users/users.component';
@@ -45,6 +45,10 @@ import { GlobalDashboardComponent } from './composants/page-dashboard/global-das
 // services
 import {UserService } from './services/users/users.service';
 import { DeleteUserComponent } from './composants/composants/users/delete-user/delete-user.component';
+import { EntreeListComponent } from './composants/composants/entrees/entrees-list/entrees-list.component';
+import { CreateEntreeComponent } from './composants/composants/entrees/create-entrees/create-entrees.component';
+import { EditEntreeComponent } from './composants/composants/entrees/edit-entrees/edit-entrees.component';
+import { DeleteEntreeComponent } from './composants/composants/entrees/delete-entrees/delete-entrees.component';
 
 
 
@@ -65,7 +69,7 @@ import { DeleteUserComponent } from './composants/composants/users/delete-user/d
     DepotsComponent,
     ProduitsComponent,
     StocksComponent,
-    EntreesComponent,
+    EntreeComponent,
     SortiesComponent,
     InventairesComponent,
     UsersComponent,
@@ -81,7 +85,11 @@ import { DeleteUserComponent } from './composants/composants/users/delete-user/d
     SortieDashboardComponent,
     InventaireDashboardComponent,
     GlobalDashboardComponent,
-    DeleteUserComponent
+    DeleteUserComponent,
+    EntreeListComponent,
+    CreateEntreeComponent,
+    EditEntreeComponent,
+    DeleteEntreeComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,

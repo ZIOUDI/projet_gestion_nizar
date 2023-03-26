@@ -8,7 +8,7 @@ import { PageLoginComponent } from './composants/pages/page-login/page-login.com
 import { DepotsComponent } from './composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
-import { EntreesComponent } from './composants/composants/entrees/entrees.component';
+import { EntreeComponent } from './composants/composants/entrees/entrees.component';
 
 import { SortiesComponent } from './composants/composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
@@ -18,6 +18,10 @@ import { UserListComponent } from './composants/composants/users/user-list/user-
 import { EditUserComponent } from './composants/composants/users/edit-user/edit-user.component';
 import { DeleteUserComponent } from './composants/composants/users/delete-user/delete-user.component';
 import { CreateUserComponent } from './composants/composants/users/create-user/create-user.component';
+import { EntreeListComponent } from './composants/composants/entrees/entrees-list/entrees-list.component';
+import { CreateEntreeComponent } from './composants/composants/entrees/create-entrees/create-entrees.component';
+import { EditEntreeComponent } from './composants/composants/entrees/edit-entrees/edit-entrees.component';
+import { DeleteEntreeComponent } from './composants/composants/entrees/delete-entrees/delete-entrees.component';
 
 
 
@@ -31,7 +35,7 @@ const routes: Routes = [
   { path: "app-depots", component: DepotsComponent },
   { path: "app-produits", component: ProduitsComponent },
   { path: "app-stocks", component: StocksComponent },
-  { path: "app-entrees", component: EntreesComponent },
+  { path: "app-entrees", component: EntreeComponent },
   { path: "app-sorties", component: SortiesComponent },
   { path: "app-inventaires", component: InventairesComponent },
   {
@@ -53,6 +57,30 @@ const routes: Routes = [
       {
         path: 'delete-user/:id',
         component: DeleteUserComponent,
+      }
+    ]
+  },
+
+  
+  {
+    path: "app-entrees", component: EntreeComponent,
+    children: [
+
+      {
+        path: '',
+        component: EntreeListComponent,
+      },
+      {
+        path: '...?', /* à compléter */
+        component: CreateEntreeComponent,
+      },
+      {
+        path: '...?', /* à compléter */
+        component: EditEntreeComponent,
+      },
+      {
+        path: '...?', /* à compléter */
+        component: DeleteEntreeComponent,
       }
     ]
   },
