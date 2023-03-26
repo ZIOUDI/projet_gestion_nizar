@@ -25,7 +25,7 @@ import { DepotsComponent } from './composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
 import { EntreeComponent } from './composants/composants/entrees/entrees.component';
-import { SortiesComponent } from './composants/composants/sorties/sorties.component';
+import { SortieComponent } from './composants/composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
 import { UsersComponent } from './composants/composants/users/users.component';
 import { CreateUserComponent } from './composants/composants/users/create-user/create-user.component';
@@ -49,6 +49,10 @@ import { EntreeListComponent } from './composants/composants/entrees/entrees-lis
 import { CreateEntreeComponent } from './composants/composants/entrees/create-entrees/create-entrees.component';
 import { EditEntreeComponent } from './composants/composants/entrees/edit-entrees/edit-entrees.component';
 import { DeleteEntreeComponent } from './composants/composants/entrees/delete-entrees/delete-entrees.component';
+import { SortieListComponent } from './composants/composants/sorties/sortie-list/sortie-list.component';
+import { CreateSortieComponent } from './composants/composants/sorties/create-sortie/create-sortie.component';
+import { EditSortieComponent } from './composants/composants/sorties/edit-sortie/edit-sortie.component';
+import { DeleteSortieComponent } from './composants/composants/sorties/delete-sortie/delete-sortie.component';
 
 
 
@@ -70,7 +74,7 @@ import { DeleteEntreeComponent } from './composants/composants/entrees/delete-en
     ProduitsComponent,
     StocksComponent,
     EntreeComponent,
-    SortiesComponent,
+    SortieComponent,
     InventairesComponent,
     UsersComponent,
     CreateUserComponent,
@@ -89,7 +93,11 @@ import { DeleteEntreeComponent } from './composants/composants/entrees/delete-en
     EntreeListComponent,
     CreateEntreeComponent,
     EditEntreeComponent,
-    DeleteEntreeComponent
+    DeleteEntreeComponent,
+    SortieListComponent,
+    CreateSortieComponent,
+    EditSortieComponent,
+    DeleteSortieComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,

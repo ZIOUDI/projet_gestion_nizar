@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SortieComponent } from './sorties.component';
+import { CreateSortieComponent } from './create-sortie.component';
 
-describe('SortieComponent', () => {
-  let component: SortieComponent;
-  let fixture: ComponentFixture<SortieComponent>;
+describe('CreateSortieComponent', () => {
+  let component: CreateSortieComponent;
+  let fixture: ComponentFixture<CreateSortieComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SortieComponent ]
+      declarations: [ CreateSortieComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SortieComponent);
+    fixture = TestBed.createComponent(CreateSortieComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

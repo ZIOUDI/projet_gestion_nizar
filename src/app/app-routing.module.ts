@@ -10,7 +10,7 @@ import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
 import { EntreeComponent } from './composants/composants/entrees/entrees.component';
 
-import { SortiesComponent } from './composants/composants/sorties/sorties.component';
+import { SortieComponent } from './composants/composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
 import { UsersComponent } from './composants/composants/users/users.component';
 import { HeaderDashboardComponent } from './composants/page-dashboard/header-dashboard/header-dashboard.component';
@@ -22,6 +22,10 @@ import { EntreeListComponent } from './composants/composants/entrees/entrees-lis
 import { CreateEntreeComponent } from './composants/composants/entrees/create-entrees/create-entrees.component';
 import { EditEntreeComponent } from './composants/composants/entrees/edit-entrees/edit-entrees.component';
 import { DeleteEntreeComponent } from './composants/composants/entrees/delete-entrees/delete-entrees.component';
+import { SortieListComponent } from './composants/composants/sorties/sortie-list/sortie-list.component';
+import { CreateSortieComponent } from './composants/composants/sorties/create-sortie/create-sortie.component';
+import { EditSortieComponent } from './composants/composants/sorties/edit-sortie/edit-sortie.component';
+import { DeleteSortieComponent } from './composants/composants/sorties/delete-sortie/delete-sortie.component';
 
 
 
@@ -29,6 +33,8 @@ const routes: Routes = [
   { path: "", component: PageLoginComponent },
   { path: "inscrire", component: PageInscriptionComponent },
   { path: "pageDashboard", component: PageDashboardComponent },
+  { path: "app-header-dashboard", component: HeaderDashboardComponent },
+
   { path: "stat", component: PageStatistiquesComponent },
 
   { path: "app-dashboards", component: PageDashboardComponent },
@@ -36,7 +42,7 @@ const routes: Routes = [
   { path: "app-produits", component: ProduitsComponent },
   { path: "app-stocks", component: StocksComponent },
   { path: "app-entrees", component: EntreeComponent },
-  { path: "app-sorties", component: SortiesComponent },
+  { path: "app-sorties", component: SortieComponent },
   { path: "app-inventaires", component: InventairesComponent },
   {
     path: "app-users", component: UsersComponent,
@@ -85,7 +91,29 @@ const routes: Routes = [
     ]
   },
 
-  { path: "app-header-dashboard", component: HeaderDashboardComponent }
+  
+  {
+    path: "app-sorties", component: SortieComponent,
+    children: [
+
+      {
+        path: '',
+        component: SortieListComponent,
+      },
+      {
+        path: '...?', /* à compléter */
+        component: CreateSortieComponent,
+      },
+      {
+        path: '...?', /* à compléter */
+        component: EditSortieComponent,
+      },
+      {
+        path: '...?', /* à compléter */
+        component: DeleteSortieComponent,
+      }
+    ]
+  }
 
 ]
 @NgModule({
