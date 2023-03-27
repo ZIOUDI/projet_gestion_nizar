@@ -10,8 +10,9 @@ export class Sortie {
     public produit: Produit,
     public quantite: number,
     public date: Date,
-    public depot: Depot
+    public depot: Depot,
+    public codeSortie: string
   ) {}
-  
+
   }
   
