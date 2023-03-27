@@ -1,29 +1,17 @@
+import { Depot } from "./depot";
+import { Produit } from "./produit";
+
  
 export class Sortie {
-    id: number;
-    dateSortie: Date;
-    quantite: number;
-    prixUnitaire: number;
-    total: number;
-    produitId: number;
-    clientID: number;
+     
+  constructor(
+    public id: number,
+    public code: string,
+    public produit: Produit,
+    public quantite: number,
+    public date: Date,
+    public depot: Depot
+  ) {}
   
-    constructor(
-        id: number,
-        dateSortie: Date,
-        quantite: number,
-        prixUnitaire: number,
-        total: number,
-        produitId: number,
-        clientID: number) {
-            
-      this.id = id  ;
-      this.dateSortie = dateSortie ;
-      this.quantite = quantite  ;
-      this.prixUnitaire = prixUnitaire  ;
-      this.total = total  ;
-      this.produitId = produitId  ;
-      this.clientID = clientID ;
-    }
   }
   

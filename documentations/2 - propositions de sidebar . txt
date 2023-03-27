@@ -37,3 +37,34 @@ Pour l'application web Angular de gestion des produits, des achats et des ventes
 +----------------------+
 
 
+
+
++----------------------+
+| Accueil              |
++----------------------+
+| Dépôts               |
+| + Ajouter un dépôt    |
+| + Liste des dépôts   |
++----------------------+
+| Produits             |
+| + Ajouter un produit |
+| + Liste des produits |
++----------------------+
+| Stock                |
+| + Voir le stock      |
+| + Liste des stocks par produit et par dépôt|
+| + Historique des stocks par produit et par dépôt|
+| + Mouvements d'entrée |
+|   + Nouvelle entrée  |
+|   + Liste des entrées|
+| + Mouvements de sortie|
+|   + Nouvelle sortie  |
+|   + Liste des sorties|
++----------------------+
+| Inventaire           |
+| + Nouvel inventaire  |
+| + Liste des inventaires|
++----------------------+
+
+
+

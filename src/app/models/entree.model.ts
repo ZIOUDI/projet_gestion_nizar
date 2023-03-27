@@ -1,35 +1,21 @@
+import { Depot } from "./depot";
+import { Mouvement } from "./mouvement";
+import { Produit } from "./produit";
 
 
 
-export class Entree {
-    id: number;
-    dateEntree: Date;
-    quantite: number;
-    prixUnitaire: number;
-    total: number;
-    produitId: number;
-    fournisseurId: number;
-
-
+export class Entree  {
+     
     constructor(
-        id: number,
-        dateEntree: Date,
-        quantite: number,
-        prixUnitaire: number,
-        total: number,
-        produitId: number,
-        fournisseurId: number,
-    ) 
-    
-    {
-        this.id = id;
-        this.dateEntree = dateEntree;
-        this.quantite = quantite;
-        this.prixUnitaire = prixUnitaire ;
-        this.total = total;
-        this.produitId = produitId;
-        this.fournisseurId = fournisseurId;
-    }
+        public id: number,
+        public code: string,
+        public produit: Produit,
+        public quantite: number,
+        public date: Date,
+        public depot: Depot,
+        public codeEntree: string
+
+      ) {}
 
 }
 
