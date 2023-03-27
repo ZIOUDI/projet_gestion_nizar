@@ -51,6 +51,14 @@
       "password": "d2bQaumqrVCF2AE",
       "phone": "2600110011",
       "role": "Administrateur"
+    },
+    {
+      "id": 20,
+      "name": "Adrien",
+      "email": "adrr@hotmail.com",
+      "password": "d2bQaumqrVCF2AE",
+      "phone": "065898989",
+      "role": "Gestionnaire"
     }
   ]
 }

@@ -1,8 +1,9 @@
 import { Depot } from "./depot";
+import { Mouvement } from "./mouvement";
 import { Produit } from "./produit";
 
  
-export class Sortie {
+export class Sortie extends Mouvement {
      
   constructor(
     public id: number,
