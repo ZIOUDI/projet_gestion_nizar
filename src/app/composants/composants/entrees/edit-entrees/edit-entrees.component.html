@@ -1,1 +1,35 @@
-<p>edit-entrees works!</p>
+
+<div class="container mt-5">
+    <h1 class="h2 mb-4">Modifier stock {{ entrees?.quantite}} </h1>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="number" id="id" ngModel="entrees.id" name="id" class="form-control" disabled>
+      </div>
+      <div class="form-group">
+        <label for="dateEntree">dateEntree:</label>
+        <input type="text" id="dateEntree" ngModel="entrees.dateEntree" dateEntree="dateEntree" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="quantite">quantite:</label>
+        <input type="quantite" id="quantite" ngModel="entrees.quantite" dateEntree="quantite" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="prixunitaire">prixunitaire:</label>
+        <input type="text" id="prixunitaire" ngModel="entrees.prixunitaire" name="prixunitaire" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="total">total:</label>
+        <input type="text" id="total" ngModel="entrees.total" name="total" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="produitId">produitId:</label>
+        <input type="text" id="produitId" ngModel="entrees.produitId" name="produitId" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="produitId">fournisseurId:</label>
+        <input type="text" id="fournisseurId" ngModel="entrees.fournisseurId" name="fournisseurId" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Sauvegarder la modification</button>
+    </form>
+  </div>

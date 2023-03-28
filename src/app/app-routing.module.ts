@@ -20,12 +20,12 @@ import { DeleteUserComponent } from './composants/composants/users/delete-user/d
 import { CreateUserComponent } from './composants/composants/users/create-user/create-user.component';
 import { EntreeListComponent } from './composants/composants/entrees/entrees-list/entrees-list.component';
 import { CreateEntreeComponent } from './composants/composants/entrees/create-entrees/create-entrees.component';
-import { EditEntreeComponent } from './composants/composants/entrees/edit-entrees/edit-entrees.component';
 import { DeleteEntreeComponent } from './composants/composants/entrees/delete-entrees/delete-entrees.component';
 import { SortieListComponent } from './composants/composants/sorties/sortie-list/sortie-list.component';
 import { CreateSortieComponent } from './composants/composants/sorties/create-sortie/create-sortie.component';
 import { EditSortieComponent } from './composants/composants/sorties/edit-sortie/edit-sortie.component';
 import { DeleteSortieComponent } from './composants/composants/sorties/delete-sortie/delete-sortie.component';
+import { EditEntreeComponent } from './composants/composants/entrees/edit-entrees/edit-entrees.component';
 
 
 
@@ -67,7 +67,7 @@ const routes: Routes = [
     ]
   },
 
-  
+
   {
     path: "app-entrees", component: EntreeComponent,
     children: [
@@ -77,21 +77,21 @@ const routes: Routes = [
         component: EntreeListComponent,
       },
       {
-        path: '...?', /* à compléter */
+        path: 'create-entrees', /* à compléter */
         component: CreateEntreeComponent,
       },
       {
-        path: '...?', /* à compléter */
+        path: 'edit-entrees/:id', /* à compléter */
         component: EditEntreeComponent,
       },
       {
-        path: '...?', /* à compléter */
+        path: 'delete-entrees/:id',
         component: DeleteEntreeComponent,
       }
     ]
   },
 
-  
+
   {
     path: "app-sorties", component: SortieComponent,
     children: [

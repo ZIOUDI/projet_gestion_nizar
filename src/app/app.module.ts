@@ -10,7 +10,6 @@ import { PageInscriptionComponent } from './composants/pages/page-inscription/pa
 import { PageLoginComponent } from './composants/pages/page-login/page-login.component';
 import { MaterialModule } from './material.model';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 
 
 // models
@@ -47,12 +46,12 @@ import {UserService } from './services/users/users.service';
 import { DeleteUserComponent } from './composants/composants/users/delete-user/delete-user.component';
 import { EntreeListComponent } from './composants/composants/entrees/entrees-list/entrees-list.component';
 import { CreateEntreeComponent } from './composants/composants/entrees/create-entrees/create-entrees.component';
-import { EditEntreeComponent } from './composants/composants/entrees/edit-entrees/edit-entrees.component';
 import { DeleteEntreeComponent } from './composants/composants/entrees/delete-entrees/delete-entrees.component';
 import { SortieListComponent } from './composants/composants/sorties/sortie-list/sortie-list.component';
 import { CreateSortieComponent } from './composants/composants/sorties/create-sortie/create-sortie.component';
 import { EditSortieComponent } from './composants/composants/sorties/edit-sortie/edit-sortie.component';
 import { DeleteSortieComponent } from './composants/composants/sorties/delete-sortie/delete-sortie.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -92,20 +91,21 @@ import { DeleteSortieComponent } from './composants/composants/sorties/delete-so
     DeleteUserComponent,
     EntreeListComponent,
     CreateEntreeComponent,
-    EditEntreeComponent,
     DeleteEntreeComponent,
     SortieListComponent,
     CreateSortieComponent,
     EditSortieComponent,
-    DeleteSortieComponent
+    DeleteSortieComponent,
+    EntreeComponent,
+
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
-     
+    FormsModule,
+
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
        UserService
