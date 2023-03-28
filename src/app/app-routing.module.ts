@@ -5,7 +5,7 @@ import { PageStatistiquesComponent } from './composants/pages/page-statistiques/
 import { PageInscriptionComponent } from './composants/pages/page-inscription/page-inscription.component';
 import { PageLoginComponent } from './composants/pages/page-login/page-login.component';
 
-import { DepotsComponent } from './composants/depots/depots.component';
+import { DepotsComponent } from './composants/composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
 import { EntreeComponent } from './composants/composants/entrees/entrees.component';
@@ -26,6 +26,10 @@ import { SortieListComponent } from './composants/composants/sorties/sortie-list
 import { CreateSortieComponent } from './composants/composants/sorties/create-sortie/create-sortie.component';
 import { EditSortieComponent } from './composants/composants/sorties/edit-sortie/edit-sortie.component';
 import { DeleteSortieComponent } from './composants/composants/sorties/delete-sortie/delete-sortie.component';
+import { DepotsListComponent } from './composants/composants/depots/depots-list/depots-list.component';
+import { CreateDepotComponent } from './composants/composants/depots/create-depot/create-depot.component';
+import { EditDepotComponent } from './composants/composants/depots/edit-depot/edit-depot.component';
+import { DeleteDepotComponent } from './composants/composants/depots/delete-depot/delete-depot.component';
 
 
 
@@ -38,7 +42,6 @@ const routes: Routes = [
   { path: "stat", component: PageStatistiquesComponent },
 
   { path: "app-dashboards", component: PageDashboardComponent },
-  { path: "app-depots", component: DepotsComponent },
   { path: "app-produits", component: ProduitsComponent },
   { path: "app-stocks", component: StocksComponent },
   { path: "app-entrees", component: EntreeComponent },
@@ -67,31 +70,54 @@ const routes: Routes = [
     ]
   },
 
-  
-  {
-    path: "app-entrees", component: EntreeComponent,
+
+
+    { path: "app-depots", component: DepotsComponent ,
+
     children: [
 
       {
         path: '',
-        component: EntreeListComponent,
+        component: DepotsListComponent,
       },
       {
-        path: '...?', /* à compléter */
-        component: CreateEntreeComponent,
+        path: 'create-depot',
+        component: CreateDepotComponent,
       },
       {
-        path: '...?', /* à compléter */
-        component: EditEntreeComponent,
+        path: 'edit-depot/:id',
+        component: EditDepotComponent,
       },
       {
-        path: '...?', /* à compléter */
-        component: DeleteEntreeComponent,
+        path: 'delete-depot/:id',
+        component: DeleteDepotComponent,
       }
     ]
   },
 
-  
+  { path: "app-entrees", component: EntreeComponent,
+  children: [
+
+    {
+      path: '',
+      component: EntreeListComponent,
+    },
+    {
+      path: '...?',
+      component: CreateEntreeComponent,
+    },
+    {
+      path: '...?', /* à compléter */
+      component: EditEntreeComponent,
+    },
+    {
+      path: '...?', /* à compléter */
+      component: DeleteEntreeComponent,
+    }
+  ]},
+
+
+
   {
     path: "app-sorties", component: SortieComponent,
     children: [

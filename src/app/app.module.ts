@@ -21,7 +21,7 @@ import { SidebarComponent } from './composants/sidebar/sidebar.component';
 import { HeaderComponent } from './composants/header/header.component';
 import { FooterComponent } from './composants/footer/footer.component';
 import { PageDashboardComponent } from './composants/page-dashboard/page-dashboard.component';
-import { DepotsComponent } from './composants/depots/depots.component';
+import { DepotsComponent } from './composants/composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
 import { EntreeComponent } from './composants/composants/entrees/entrees.component';
@@ -53,6 +53,11 @@ import { SortieListComponent } from './composants/composants/sorties/sortie-list
 import { CreateSortieComponent } from './composants/composants/sorties/create-sortie/create-sortie.component';
 import { EditSortieComponent } from './composants/composants/sorties/edit-sortie/edit-sortie.component';
 import { DeleteSortieComponent } from './composants/composants/sorties/delete-sortie/delete-sortie.component';
+import { DepotsListComponent } from './composants/composants/depots/depots-list/depots-list.component';
+import { CreateDepotComponent } from './composants/composants/depots/create-depot/create-depot.component';
+import { EditDepotComponent } from './composants/composants/depots/edit-depot/edit-depot.component';
+import { DeleteDepotComponent } from './composants/composants/depots/delete-depot/delete-depot.component';
+import { DepotsService } from './services/depots/depots.service';
 
 
 
@@ -97,7 +102,11 @@ import { DeleteSortieComponent } from './composants/composants/sorties/delete-so
     SortieListComponent,
     CreateSortieComponent,
     EditSortieComponent,
-    DeleteSortieComponent
+    DeleteSortieComponent,
+    DepotsListComponent,
+    CreateDepotComponent,
+    EditDepotComponent,
+    DeleteDepotComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,
@@ -105,10 +114,10 @@ import { DeleteSortieComponent } from './composants/composants/sorties/delete-so
     MaterialModule,
     HttpClientModule,
     FormsModule
-     
+
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
-       UserService
+       UserService,DepotsService
   ],
   bootstrap: [AppComponent]
 })
