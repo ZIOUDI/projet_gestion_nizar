@@ -1,19 +1,19 @@
 import { Depot } from "./depot";
-import { Mouvement } from "./mouvement";
 import { Produit } from "./produit";
 
- 
+
 export class Sortie extends Mouvement {
-     
+
   constructor(
-    public id: number,
-    public code: string,
-    public produit: Produit,
-    public quantite: number,
-    public date: Date,
-    public depot: Depot,
+    public override id: number,
+    public override code: string,
+    public override produit: Produit,
+    public override quantite: number,
+    public override date: Date,
+    public override depot: Depot,
     public codeSortie: string
-  ) {}
+  )
+   {    super(id, code, produit, quantite, date, depot);
+  }
 
   }
-  
