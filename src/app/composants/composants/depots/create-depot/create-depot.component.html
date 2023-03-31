@@ -1,1 +1,46 @@
-<p>create-depot works!</p>
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- Ajouter les liens vers les fichiers CSS et JS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+     integrity="sha512-LzUfQ2Ud8Bq3knWh5c5P5d87Bxj8DmWzPvKVhpt4grzpsAmfw8uonAfRiZ7rCZYr35Gnsx8uq3Y9y7QUu0FfIg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" 
+    integrity="sha512-01DmGhTxQSP1mVZlxHpjW8fJhPpOFmTfxz+a9mPeW8gsVstgydZZDk/6e03pYw3q6i+lU6SZfUv7NkpQz1u5KQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ajouter Utilisateur</h1>
+      
+
+      <form (submit)="onSubmit()">
+         <div class="form-group">
+          <label for="codeDepot">Code Dépôt</label>
+          <input type="text" id="codeDepot" name="codeDepot" [(ngModel)]="nouveauDepot.codeDepot" class="form-control">
+        </div>
+         <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" [(ngModel)]="nouveauDepot.nom" class="form-control">
+        </div>
+         <div class="form-group">
+          <label for="adresse">Adresse</label>
+          <input type="text" id="adresse" name="adresse" [(ngModel)]="nouveauDepot.adresse" class="form-control">
+        </div>
+         <div class="form-group">
+          <label for="responsable">Responsable</label>
+          <input type="text" id="responsable" name="responsable" [(ngModel)]="nouveauDepot.responsable" class="form-control">
+        </div>
+         <div class="form-group">
+          <label for="capacite">Capacité(en Tonne)</label>
+          <input type="number" id="capacite" name="capacite" [(ngModel)]="nouveauDepot.capacite" class="form-control">
+        </div>
+        <br>
+         <button type="submit" class="btn btn-primary">Créer  </button>
+
+      </form>
+      
+    </div>
+  </body>
+</html>

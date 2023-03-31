@@ -10,7 +10,7 @@ import { UserService } from 'src/app/services/users/users.service';
   templateUrl: './delete-user.component.html',
   styleUrls: ['./delete-user.component.scss']
 })
-export class DeleteUserComponent {
+export class DeleteUserComponent  {
 
 
   user!: User;
@@ -21,7 +21,7 @@ export class DeleteUserComponent {
     private location: Location
   ) {}
 
- 
+
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
@@ -36,7 +36,7 @@ export class DeleteUserComponent {
     this.userService.deleteUser(this.user.id)
       .subscribe(() => this.location.back());
   }
-  
+
   goBack(): void {
     this.location.back();
   }

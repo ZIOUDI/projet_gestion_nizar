@@ -60,5 +60,52 @@
       "phone": "065898989",
       "role": "Gestionnaire"
     }
-  ]
+  ],
+  "depots": [
+    {
+      "id": 1,
+      "codeDepot": "Dep1015",
+      "nom": "SATUR",
+      "adresse": "5 rue de la rupublique Sfax",
+      "responsable": "Mezioudi Mehdi",
+      "capacite": 102,
+      "inventaire": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 2,
+      "codeDepot": "Dep2088",
+      "nom": "MAND",
+      "adresse": "9 rue de la rupublique Sfax",
+      "responsable": "Felhi Zied",
+      "capacite": 150,
+      "inventaire": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 3,
+      "codeDepot": "Dep5240",
+      "nom": "TOMATES",
+      "adresse": "15 rue de la paie Sfax",
+      "responsable": "Saoudi Nidhal",
+      "capacite": 245,
+      "inventaire": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 4,
+      "codeDepot": "Dep2006",
+      "nom": "POTATES",
+      "adresse": "23 rue de la paie Sfax",
+      "responsable": "Kefi Ali",
+      "capacite": 369,
+      "inventaire": [],
+      "mouvements": [],
+      "couts": 0
+    }
+  ],
+  "Mouvement": []
 }
