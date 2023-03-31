@@ -45,32 +45,12 @@
       "role": "Administrateur"
     },
     {
-      "id": 55285,
-      "name": "nizar",
-      "email": "nizardabbabi90@gmail.com",
-      "password": "35+54654654",
-      "phone": "26557594",
-      "role": "chef de sécurité"
-    }
-  ],
-  "entrees": [
-    {
-      "id": 1,
-      "dateEntree": 41,
-      "  quantite": 2,
-      " prixUnitaire": 2,
-      "total": 2,
-      "produitId": 2,
-      "fournisseurId": 3
-    },
-    {
-      "id": 2,
-      "dateEntree": "12",
-      "quantite": 0,
-      "prixUnitaire": 0,
-      "total": 0,
-      "produitId": 0,
-      "fournisseurId": 0
+      "id": 15,
+      "name": "Adrien",
+      "email": "abc@hotmail.com",
+      "password": "d2bQaumqrVCF2AE",
+      "phone": "2600110011",
+      "role": "Administrateur"
     },
     {
       "id": 20,
@@ -80,5 +60,52 @@
       "phone": "065898989",
       "role": "Gestionnaire"
     }
-  ]
+  ],
+  "depots": [
+    {
+      "id": 1,
+      "codeDepot": "Dep1015",
+      "nom": "SATUR",
+      "adresse": "5 rue de la rupublique Sfax",
+      "responsable": "Mezioudi Mehdi",
+      "capacite": 102,
+      "inventaire": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 2,
+      "codeDepot": "Dep2088",
+      "nom": "MAND",
+      "adresse": "9 rue de la rupublique Sfax",
+      "responsable": "Felhi Zied",
+      "capacite": 150,
+      "inventaire": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 3,
+      "codeDepot": "Dep5240",
+      "nom": "TOMATES",
+      "adresse": "15 rue de la paie Sfax",
+      "responsable": "Saoudi Nidhal",
+      "capacite": 245,
+      "inventaire": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 4,
+      "codeDepot": "Dep2006",
+      "nom": "POTATES",
+      "adresse": "23 rue de la paie Sfax",
+      "responsable": "Kefi Ali",
+      "capacite": 369,
+      "inventaire": [],
+      "mouvements": [],
+      "couts": 0
+    }
+  ],
+  "Mouvement": []
 }

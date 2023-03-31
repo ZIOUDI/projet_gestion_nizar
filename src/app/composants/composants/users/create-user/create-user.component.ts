@@ -8,7 +8,7 @@ import { User } from 'src/app/models/user';
 
 import { UserService } from 'src/app/services/users/users.service';
 
- 
+
 
 @Component({
   selector: 'app-create-user',
@@ -17,46 +17,31 @@ import { UserService } from 'src/app/services/users/users.service';
 })
 export class CreateUserComponent   {
 
-  
-  
+
+
   id!: number;
   name!: string;
   email!: string;
   password!: string;
   phone!: string;
   role!: string;
- 
+
   constructor(private userService: UserService ,  private router: Router) {}
 
- /*  onSubmit() {
-
-    console.log('CreateUserComponent  onSubmit new user')
-
-    const user: User = new User(this.id, this.name, this.email,this.password, this.phone, this.role);
-    console.log(user)
-     this.userService.addUser(user);
-
-    this.id = 0;
-    this.name = '';
-    this.email = '';
-    this.password ='';
-    this.phone = '';
-    this.role = '';
-  } */
 
   onSubmit() {
     console.log('CreateUserComponent onSubmit new user');
-  
+
     const user: User = new User(this.id, this.name, this.email, this.password, this.phone, this.role);
     console.log(user);
-    
+
     this.userService.addUser(user).subscribe((response: User) => {
       console.log('Utilisateur ajouté bloc CreateUserComponent onSubmit :', response);
       this.router.navigate(['/app-users']);
     }, (error: any) => {
       console.error('Erreur lors de l\'ajout de l\'utilisateur :', error);
     });
-  
+
     this.id = 0;
     this.name = '';
     this.email = '';
@@ -64,5 +49,5 @@ export class CreateUserComponent   {
     this.phone = '';
     this.role = '';
   }
-  
+
 }

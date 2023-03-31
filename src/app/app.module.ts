@@ -10,6 +10,7 @@ import { PageInscriptionComponent } from './composants/pages/page-inscription/pa
 import { PageLoginComponent } from './composants/pages/page-login/page-login.component';
 import { MaterialModule } from './material.model';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 // models
@@ -20,7 +21,7 @@ import { SidebarComponent } from './composants/sidebar/sidebar.component';
 import { HeaderComponent } from './composants/header/header.component';
 import { FooterComponent } from './composants/footer/footer.component';
 import { PageDashboardComponent } from './composants/page-dashboard/page-dashboard.component';
-import { DepotsComponent } from './composants/depots/depots.component';
+import { DepotsComponent } from './composants/composants/depots/depots.component';
 import { ProduitsComponent } from './composants/produits/produits.component';
 import { StocksComponent } from './composants/stocks/stocks.component';
 import { EntreeComponent } from './composants/composants/entrees/entrees.component';
@@ -46,12 +47,17 @@ import {UserService } from './services/users/users.service';
 import { DeleteUserComponent } from './composants/composants/users/delete-user/delete-user.component';
 import { EntreeListComponent } from './composants/composants/entrees/entrees-list/entrees-list.component';
 import { CreateEntreeComponent } from './composants/composants/entrees/create-entrees/create-entrees.component';
+import { EditEntreeComponent } from './composants/composants/entrees/edit-entrees/edit-entrees.component';
 import { DeleteEntreeComponent } from './composants/composants/entrees/delete-entrees/delete-entrees.component';
 import { SortieListComponent } from './composants/composants/sorties/sortie-list/sortie-list.component';
 import { CreateSortieComponent } from './composants/composants/sorties/create-sortie/create-sortie.component';
 import { EditSortieComponent } from './composants/composants/sorties/edit-sortie/edit-sortie.component';
 import { DeleteSortieComponent } from './composants/composants/sorties/delete-sortie/delete-sortie.component';
-import { FormsModule } from '@angular/forms';
+import { DepotsListComponent } from './composants/composants/depots/depots-list/depots-list.component';
+import { CreateDepotComponent } from './composants/composants/depots/create-depot/create-depot.component';
+import { EditDepotComponent } from './composants/composants/depots/edit-depot/edit-depot.component';
+import { DeleteDepotComponent } from './composants/composants/depots/delete-depot/delete-depot.component';
+import { DepotsService } from './services/depots/depots.service';
 
 
 
@@ -91,24 +97,27 @@ import { FormsModule } from '@angular/forms';
     DeleteUserComponent,
     EntreeListComponent,
     CreateEntreeComponent,
+    EditEntreeComponent,
     DeleteEntreeComponent,
     SortieListComponent,
     CreateSortieComponent,
     EditSortieComponent,
     DeleteSortieComponent,
-    EntreeComponent,
-
+    DepotsListComponent,
+    CreateDepotComponent,
+    EditDepotComponent,
+    DeleteDepotComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule,
+    FormsModule
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
-       UserService
+       UserService,DepotsService
   ],
   bootstrap: [AppComponent]
 })

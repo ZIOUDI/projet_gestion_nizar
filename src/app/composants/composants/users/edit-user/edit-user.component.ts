@@ -27,13 +27,7 @@ export class EditUserComponent implements OnInit {
     private userService: UserService
   ) { }
 
-/* 
-  ngOnInit() {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.userService.getUser(id)
-      .subscribe(user => this.user = user);
-  }
-   */
+
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
@@ -58,4 +52,3 @@ export class EditUserComponent implements OnInit {
 }
 
 
- 
