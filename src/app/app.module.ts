@@ -58,6 +58,9 @@ import { CreateDepotComponent } from './composants/composants/depots/create-depo
 import { EditDepotComponent } from './composants/composants/depots/edit-depot/edit-depot.component';
 import { DeleteDepotComponent } from './composants/composants/depots/delete-depot/delete-depot.component';
 import { DepotsService } from './services/depots/depots.service';
+import { ArticlesParDepotComponent } from './composants/composants/depots/articles-par-depot/articles-par-depot.component';
+import { MouvementsParDepotComponent } from './composants/composants/depots/mouvements-par-depot/mouvements-par-depot.component';
+import { InventairesParDepotComponent } from './composants/composants/depots/inventaires-par-depot/inventaires-par-depot.component';
 
 
 
@@ -106,7 +109,10 @@ import { DepotsService } from './services/depots/depots.service';
     DepotsListComponent,
     CreateDepotComponent,
     EditDepotComponent,
-    DeleteDepotComponent
+    DeleteDepotComponent,
+    ArticlesParDepotComponent,
+    MouvementsParDepotComponent,
+    InventairesParDepotComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,

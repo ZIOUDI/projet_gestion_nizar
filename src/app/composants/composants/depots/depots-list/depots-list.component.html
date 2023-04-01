@@ -33,7 +33,6 @@
 
 
 
-
     <table class="table table-hover">
       <thead>
         <tr>
@@ -42,6 +41,9 @@
           <th>Adresse</th>
           <th>Responsable</th>
           <th>Capacité</th>
+          <th>Articles</th>
+          <th>Mouvements</th>
+          <th>Inventaires</th>
           <th>Action</th>
         </tr>
       </thead>
@@ -52,16 +54,19 @@
           <td>{{ depot.adresse }}</td>
           <td>{{ depot.responsable }}</td>
           <td>{{ depot.capacite }}</td>
-          <td>
 
+          <td><a routerLink="/depots/{{ depot.id }}/articles"><i class="bi bi-grid bi-lg"></i></a></td>
+          <td><a routerLink="/depots/{{ depot.id }}/mouvements"><i class="bi bi-cash-stack bi-lg"></i></a></td>
+          <td><a routerLink="/depots/{{ depot.id }}/inventaires"><i class="bi bi-calendar3 bi-lg"></i></a></td>
+        
+          <td>
             <button (click)="modifierDepot(depot.id)" class="btn btn-sm btn-outline-primary me-2">Modifier</button>
             <button (click)="supprimerDepot(depot.id)" class="btn btn-sm btn-outline-danger">Supprimer</button>
-
           </td>
         </tr>
       </tbody>
     </table>
-
+    
 
   </div>
   <!-- Bootstrap JS -->
