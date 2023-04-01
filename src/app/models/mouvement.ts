@@ -6,10 +6,10 @@ export class Mouvement {
     constructor(
         public id: number,
         public code: string,
-        public produit: Produit,
+        public produitId: string,
         public quantite: number,
-        public date: Date,
-        public depot: Depot,
+        public dateEntree: Date,
+        public depotId: string,
  
       ) {}
 

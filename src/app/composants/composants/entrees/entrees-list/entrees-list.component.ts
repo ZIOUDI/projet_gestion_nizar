@@ -34,17 +34,17 @@ export class EntreeListComponent {
 
   ouvrirPageNewEntrees(){
 
-   this.router.navigate(['/app-entrees/create-entrees']);
+   this.router.navigate(['/app-entrees/app-create-entrees']);
   }
 
 
   ouvrirPageEditEntrees(id: number): void {
-    this.router.navigate(['/app-entrees/edit-entrees', id]);
+    this.router.navigate(['/app-entrees/app-edit-entrees', id]);
   }
 
 
   ouvrirPageDeleteEntrees(id: number): void {
-     this.router.navigate(['/app-entrees/delete-entrees', id]);
+     this.router.navigate(['/app-entrees/app-delete-entrees', id]);
   }
 
 

@@ -44,7 +44,27 @@ const routes: Routes = [
   { path: "app-dashboards", component: PageDashboardComponent },
   { path: "app-produits", component: ProduitsComponent },
   { path: "app-stocks", component: StocksComponent },
-  { path: "app-entrees", component: EntreeComponent },
+  { path: "app-entrees", component: EntreeComponent ,
+  children: [
+
+    {
+      path: '',
+      component: EntreeListComponent,
+    },
+    {
+      path: 'app-create-entrees',
+      component: CreateEntreeComponent,
+    },
+    {
+      path: 'app-edit-entrees/:id',
+      component: EditEntreeComponent,
+    },
+    {
+      path: 'appdelete-entrees/:id',
+      component: DeleteEntreeComponent,
+    }
+  ]
+},
   { path: "app-sorties", component: SortieComponent },
   { path: "app-inventaires", component: InventairesComponent },
   {

@@ -9,14 +9,14 @@ export class Entree extends Mouvement {
     constructor(
         public override id: number,
         public override code: string,
-        public override produit: Produit,
+        public override produitId: string,
         public override quantite: number,
-        public override date: Date,
-        public override depot: Depot,
+        public override dateEntree: Date,
+        public override depotId: string,
         public codeEntree: string
 
       ) {
-        super(id, code, produit, quantite, date, depot);
+        super(id, code, produitId, quantite, dateEntree, depotId);
          }
 
 }
