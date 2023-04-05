@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Produit } from 'src/app/models/produit';
+import { ArticlesService } from 'src/app/services/articles/articles.service';
 
 @Component({
   selector: 'articles-par-depot',
@@ -7,15 +10,15 @@ import { Component } from '@angular/core';
 })
 export class ArticlesParDepotComponent {
 
-  articles: any[];
-  depotId: number;
+  articles!: string[];
+  depotId!: number;
 
-  constructor(private articleService: ArticleService, private route: ActivatedRoute) { }
+  constructor(private articleService: ArticlesService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.depotId = params['depotId'];
-      this.articleService.getArticlesByDepot(this.depotId).subscribe(data => {
+      this.articleService.getArticlesByDepot(this.depotId).subscribe((data: string[]) => {
         this.articles = data;
       });
     });

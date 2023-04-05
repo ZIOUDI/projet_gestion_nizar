@@ -42,6 +42,7 @@ import { SortieDashboardComponent } from './composants/page-dashboard/sortie-das
 import { InventaireDashboardComponent } from './composants/page-dashboard/inventaire-dashboard/inventaire-dashboard.component';
 import { GlobalDashboardComponent } from './composants/page-dashboard/global-dashboard/global-dashboard.component';
 
+
 // services
 import {UserService } from './services/users/users.service';
 import { DeleteUserComponent } from './composants/composants/users/delete-user/delete-user.component';
@@ -61,7 +62,11 @@ import { DepotsService } from './services/depots/depots.service';
 import { ArticlesParDepotComponent } from './composants/composants/depots/articles-par-depot/articles-par-depot.component';
 import { MouvementsParDepotComponent } from './composants/composants/depots/mouvements-par-depot/mouvements-par-depot.component';
 import { InventairesParDepotComponent } from './composants/composants/depots/inventaires-par-depot/inventaires-par-depot.component';
-
+import { ArticlesService } from './services/articles/articles.service';
+import { InventairesService } from './services/inventaires/inventaires.service';
+import { MouvementsService } from './services/mouvements/mouvements.service';
+import { ProduitService } from './services/produits/produit.service';
+ 
 
 
 
@@ -123,7 +128,7 @@ import { InventairesParDepotComponent } from './composants/composants/depots/inv
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
-       UserService,DepotsService
+       UserService,DepotsService , ProduitService, ArticlesService,InventairesService,MouvementsService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Entree } from 'src/app/models/entree.model';
-import { EntreesService } from 'src/app/services/sorties/entrees.service';
 import { EntreeComponent } from '../entrees.component';
+import { EntreesService } from 'src/app/services/entrees/entrees.service';
 
 @Component({
   selector: 'app-entrees-list',

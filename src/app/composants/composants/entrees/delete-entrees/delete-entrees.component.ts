@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Entree } from 'src/app/models/entree.model';
-import { EntreesService } from 'src/app/services/sorties/entrees.service';
+import { EntreesService } from 'src/app/services/entrees/entrees.service';
 import { Location } from '@angular/common';
 
 @Component({
