@@ -15,17 +15,21 @@ export class CreateProduitComponent {
   constructor(private produitService:ProduitService ,  private router: Router) {}
 
 
-  nouveauProduit: Produit = new Produit(0, '', '', '',  0, [], '');
+
+
+
+  nouveauProduit: Produit = new Produit(0, '', '', '', 0, [] );
 
   onSubmit() {
-    // Enregistrement du nouveau dépôt dans la base de données ou autre traitement
-    this.produitService.addProduit(this.nouveauProduit).subscribe((response :Produit) => {
+    // Enregistrement du nouveau Produit dans la base de données
+    this.produitService.addProduit(this.nouveauProduit).subscribe((response: Produit) => {
       this.router.navigate(['/app-produit']);
     })
-    console.log('Nouveau dépôt créé : ', this.nouveauProduit);
-    
+
+    console.log('Nouveau Produit créé : ', this.nouveauProduit);
+
     // Réinitialisation du formulaire
-    this.nouveauProduit = new Produit(0, '', '', '',  0, [], '');
+    this.nouveauProduit = new Produit(0, '', '', '', 0 , [] );
   }
 
-}  
+}

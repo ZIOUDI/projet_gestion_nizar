@@ -61,6 +61,7 @@ import { DepotsService } from './services/depots/depots.service';
 import { ArticlesParDepotComponent } from './composants/composants/depots/articles-par-depot/articles-par-depot.component';
 import { MouvementsParDepotComponent } from './composants/composants/depots/mouvements-par-depot/mouvements-par-depot.component';
 import { InventairesParDepotComponent } from './composants/composants/depots/inventaires-par-depot/inventaires-par-depot.component';
+import { ProduitService } from './services/produit.service';
 
 
 
@@ -123,7 +124,7 @@ import { InventairesParDepotComponent } from './composants/composants/depots/inv
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
-       UserService,DepotsService
+       UserService,DepotsService , ProduitService
   ],
   bootstrap: [AppComponent]
 })

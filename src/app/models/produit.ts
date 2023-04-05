@@ -4,11 +4,11 @@ export class Produit {
 
     constructor(
         public id: number,
-        public code: string,
+        public codeProduit: string,
         public nom: string,
         public description: string,
         public prix: number,
-        public stock: Stock[],
-        public codeProduit: string
-      ) {}
+        public stock: Stock[]
+       ) {}
+
 }

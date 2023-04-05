@@ -1,3 +1,6 @@
+
+  
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,32 +15,43 @@
   </head>
   <body>
     <div class="container">
-      <h1>Ajouter Utilisateur</h1>
+      <h1>Ajouter Produit</h1>
       
 
-      <form (submit)="onSubmit()">
-         <div class="form-group">
-          <label for="id">Code Dépôt</label>
-          <input type="text" id="id" name="id" [(ngModel)]="nouveauProduit.id" class="form-control">
-        </div>
-         <div class="form-group">
-          <label for="nom">Nom</label>
-          <input type="text" id="nom" name="nom" [(ngModel)]="nouveauProduit.nom" class="form-control">
-        </div>
-         <div class="form-group">
-          <label for="adresse">Adresse</label>
-          <input type="text" id="adresse" name="adresse" [(ngModel)]="nouveauProduit.adresse" class="form-control">
-        </div>
-         <div class="form-group">
-          <label for="responsable">Responsable</label>
-          <input type="text" id="responsable" name="responsable" [(ngModel)]="nouveauProduit.description" class="form-control">
-        </div>
-         <div class="form-group">
-          <label for="capacite">Capacité(en Tonne)</label>
-          <input type="number" id="capacite" name="capacite" [(ngModel)]="nouveauProduit.prix" class="form-control">
-        </div>
+      
+        <form (submit)="onSubmit()">
+         
+          <form (submit)="onSubmit()">
+           
+
+            <div class="form-group">
+             <label for="id">ID :</label>
+             <input type="number" id="id" name="id" [(ngModel)]="nouveauProduit.id" class="form-control">
+           </div>    
+         
+           <div class="form-group">
+             <label for="codeProduit">Code Dépôt</label>
+             <input type="text" id="codeProduit" name="codeProduit" [(ngModel)]="nouveauProduit.codeProduit" class="form-control">
+           </div>
+            <div class="form-group">
+             <label for="nom">Nom</label>
+             <input type="text" id="nom" name="nom" [(ngModel)]="nouveauProduit.nom" class="form-control">
+           </div>
+            <div class="form-group">
+             <label for="description">description</label>
+             <input type="text" id="description" name="description" [(ngModel)]="nouveauProduit.description" class="form-control">
+           </div>
+            <div class="form-group">
+             <label for="prix">prix</label>
+             <input type="number" id="prix" name="prix" [(ngModel)]="nouveauProduit.prix" class="form-control">
+           </div>
+            <div class="form-group">
+             <label for="capacite">Capacité </label>
+             <input type="number" id="capacite" name="capacite" [(ngModel)]="nouveauProduit.capacite" class="form-control">
+           </div>
+
         <br>
-         <button type="submit" class="btn btn-primary">Créer  </button>
+         <button type="submit" class="btn btn-primary">Créer Produit</button>
 
       </form>
       
