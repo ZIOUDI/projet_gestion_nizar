@@ -34,17 +34,17 @@ export class ListProduitComponent {
 
   ajouterProduit(){
 
-   this.router.navigate(['/app-depots/create-depot']);
+   this.router.navigate(['/app-produits/app-create-produit']);
   }
 
 
   modifierProduit(id: number): void {
-    this.router.navigate(['/app-depots/edit-depot', id]);
+    this.router.navigate(['/app-produits/app-edit-produit', id]);
   }
 
 
   supprimerProduit(id: number): void {
-     this.router.navigate(['/app-depots/delete-depot', id]);
+     this.router.navigate(['/app-produits/app-delete-produit', id]);
   }
 
 }

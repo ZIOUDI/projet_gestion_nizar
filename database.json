@@ -108,45 +108,17 @@
     }
   ],
   "Mouvement": [],
-  "entrees": [
+  "entrees": [],
+  "Sorties": [
     {
       "id": 1,
-      "code": "",
-      "produitId": "",
-      "quantite": 0,
-      "dateEntree": "2023-04-01T10:24:04.527Z",
-      "depotId": "",
-      "codeEntree": ""
-    },
-    {
-      "id": 2,
-      "code": "",
-      "produitId": "",
-      "quantite": 0,
-      "dateEntree": "2023-04-01T10:24:58.107Z",
-      "depotId": "",
-      "codeEntree": ""
-    },
-    {
-      "id": 3,
-      "code": "",
-      "produitId": "",
-      "quantite": 0,
-      "dateEntree": "2023-04-01T10:31:35.251Z",
-      "depotId": "",
-      "codeEntree": ""
-    },
-    {
-      "id": 4,
-      "code": "",
-      "produitId": "",
-      "quantite": 0,
-      "dateEntree": "2023-04-01T10:32:05.971Z",
-      "depotId": "",
-      "codeEntree": ""
-    },
-    {
-      "id": 5
+      "code": "1",
+      "produitId": "1",
+      "quantite": "36",
+      "dateEntree": "11111-11-11",
+      "depotId": "1",
+      "codeSortie": ""
     }
-  ]
+  ],
+  "produit": []
 }

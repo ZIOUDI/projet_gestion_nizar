@@ -11,7 +11,7 @@ import { EntreesService } from 'src/app/services/sorties/entrees.service';
 export class CreateEntreeComponent {
 
   
-  nouvelleEntree!: Entree;
+  nouvelleEntree: Entree = new Entree(0, '', '', 0, new Date(),'','');
  
   constructor(private entreesService: EntreesService,  private router: Router) {}
  
@@ -20,6 +20,8 @@ export class CreateEntreeComponent {
       (response: Entree) => {
         console.log('La nouvelle entrée a été ajoutée avec succès :', response);
         this.router.navigate(['/app-entrees']);
+         // Réinitialisation du formulaire
+    this.nouvelleEntree = new Entree(0, '', '', 0, new Date(),'','');
       },
       (error: any) => {
         console.error('Erreur lors de l\'ajout de la nouvelle entrée :', error);

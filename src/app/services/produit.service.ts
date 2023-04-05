@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable, catchError, tap, throwError } from 'rxjs';
-import { Produit } from '../models/produit';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable, tap, catchError, throwError } from "rxjs";
+import { Produit } from "../models/produit";
 
 @Injectable({
   providedIn: 'root'
@@ -31,8 +31,8 @@ export class ProduitService {
 
 
 
-  addProduit(Produit: Produit): Observable<Produit> {
-    return this.http.post<Produit>(this.produitUrl, Produit).pipe(
+  addProduit(produit: Produit): Observable<Produit> {
+    return this.http.post<Produit>(this.produitUrl, produit).pipe(
       tap((response: Produit) => {
         console.log('Utilisateur ajouté bloc service :', response);
       }),
