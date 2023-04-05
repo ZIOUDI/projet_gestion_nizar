@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- Ajouter les liens vers les fichiers CSS et JS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+     integrity="sha512-LzUfQ2Ud8Bq3knWh5c5P5d87Bxj8DmWzPvKVhpt4grzpsAmfw8uonAfRiZ7rCZYr35Gnsx8uq3Y9y7QUu0FfIg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+    integrity="sha512-01DmGhTxQSP1mVZlxHpjW8fJhPpOFmTfxz+a9mPeW8gsVstgydZZDk/6e03pYw3q6i+lU6SZfUv7NkpQz1u5KQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>entree de stock</h1>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="id">ID:</label>
+          <input type="text" id="id" [(ngModel)]="nouveauProduit.id" name="id" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="codeEntree">Code Entree:</label>
+          <input type="text" id="codeEntree" [(ngModel)]="nouveauProduit.code" name="code" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="dateentree">date Entree:</label>
+          <input type="date" id="dateentree" [(ngModel)]="nouveauProduit.dateEntree" name="dateentree" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="quantite">quantite</label>
+          <input type="text" id="quantite" [(ngModel)]="nouveauProduit.quantite" name="quantite" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label for="produitId">produitId:</label>
+          <input type="text" id="produitId" [(ngModel)]="nouveauProduit.produitId" name="produitId" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="depotId">depotId:</label>
+          <input type="text" id="depotId" [(ngModel)]="nouveauProduit.depotId" name="depotId" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter  </button>
+      </form>
+
+     
+          
+    </div>
+  </body>
+</html>
