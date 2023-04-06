@@ -14,7 +14,7 @@ export class CreateDepotComponent {
   constructor(private depotsService: DepotsService ,  private router: Router) {}
 
 
-  nouveauDepot: Depot = new Depot(0, '', '', '', '', 0, [], [], 0);
+  nouveauDepot: Depot = new Depot(0, '', '', '', '', 0, [], [], [], 0);
 
   onSubmit() {
     // Enregistrement du nouveau dépôt dans la base de données ou autre traitement
@@ -24,7 +24,7 @@ export class CreateDepotComponent {
     console.log('Nouveau dépôt créé : ', this.nouveauDepot);
     
     // Réinitialisation du formulaire
-    this.nouveauDepot = new Depot(0, '', '', '', '', 0, [], [], 0);
+    this.nouveauDepot = new Depot(0, '', '', '', '', 0, [], [], [], 0);
   }
 
 

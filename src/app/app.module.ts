@@ -13,6 +13,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 
+// Utiliser les composants Material Design dans vos composants 
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+
 // models
 import {User} from './models/user';
 
@@ -66,6 +71,7 @@ import { ArticlesService } from './services/articles/articles.service';
 import { InventairesService } from './services/inventaires/inventaires.service';
 import { MouvementsService } from './services/mouvements/mouvements.service';
 import { ProduitService } from './services/produits/produit.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  
 
 
@@ -124,7 +130,13 @@ import { ProduitService } from './services/produits/produit.service';
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+
+
+    MatInputModule,
+    MatButtonModule,
+    MatTableModule
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs

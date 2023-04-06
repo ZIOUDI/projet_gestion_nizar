@@ -1,5 +1,5 @@
 {
-  "users": [
+   "users": [
     {
       "id": 1,
       "name": "Aymen Yahyaoui",
@@ -61,6 +61,10 @@
       "role": "Gestionnaire"
     }
   ],
+
+
+
+
   "depots": [
     {
       "id": 1,
@@ -69,10 +73,35 @@
       "adresse": "5 rue de la rupublique Sfax",
       "responsable": "Mezioudi Mehdi",
       "capacite": 102,
+      "articles": [
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 2,
+          "nom": "Poire",
+          "description": "Fruit jaune et ovale",
+          "prix": 2,
+          "quantite": 15,
+          "seuilMinimum": 3,
+          "seuilMaximum": 30,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        }
+      ],
       "inventaire": [],
       "mouvements": [],
       "couts": 0
-    },
+    }
+    ,
     {
       "id": 2,
       "codeDepot": "Dep2088",
@@ -80,10 +109,46 @@
       "adresse": "9 rue de la rupublique Sfax",
       "responsable": "Felhi Zied",
       "capacite": 150,
+      "articles": [
+        {
+          "id": 1,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 2,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 3,
+          "nom": "Classeur",
+          "description": "Classeur à 4 anneaux",
+          "prix": 7,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        }
+      ],
       "inventaire": [],
       "mouvements": [],
       "couts": 0
-    },
+    }
+    ,
     {
       "id": 3,
       "codeDepot": "Dep5240",
@@ -91,6 +156,41 @@
       "adresse": "15 rue de la paie Sfax",
       "responsable": "Saoudi Nidhal",
       "capacite": 245,
+      "articles": [
+        {
+          "id": 1,
+          "nom": "Tomate",
+          "description": "Tomates mûres et juteuses",
+          "prix": 2.5,
+          "quantite": 200,
+          "seuilMinimum": 20,
+          "seuilMaximum": 300,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-01"
+        },
+        {
+          "id": 2,
+          "nom": "Concombre",
+          "description": "Concombres frais et croquants",
+          "prix": 1.5,
+          "quantite": 150,
+          "seuilMinimum": 15,
+          "seuilMaximum": 250,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-05"
+        },
+        {
+          "id": 3,
+          "nom": "Poivron",
+          "description": "Poivrons rouges, verts et jaunes",
+          "prix": 3,
+          "quantite": 100,
+          "seuilMinimum": 10,
+          "seuilMaximum": 150,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-10"
+        }
+      ],
       "inventaire": [],
       "mouvements": [],
       "couts": 0
@@ -102,12 +202,22 @@
       "adresse": "23 rue de la paie Sfax",
       "responsable": "Kefi Ali",
       "capacite": 369,
+      "articles": [],
       "inventaire": [],
       "mouvements": [],
       "couts": 0
     }
   ],
+
+
+
+
+
+
   "Mouvement": [],
+
+
+
   "entrees": [
     {
       "id": 1,
@@ -149,4 +259,7 @@
       "id": 5
     }
   ]
+
+
+  
 }

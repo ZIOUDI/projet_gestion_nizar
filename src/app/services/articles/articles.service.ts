@@ -8,27 +8,30 @@ import { Observable } from 'rxjs';
 })
 export class ArticlesService {
 
-  private baseUrl = 'http://localhost:8080/api/articles';
+  private articlesUrl = 'http://localhost:3000/articles';
+
+  private depotsUrl = 'http://localhost:3000/depots';
+
 
   constructor(private http: HttpClient) { }
 
   getArticlesByDepot(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/depot/${id}`);
+    return this.http.get(`${this.depotsUrl}/${id}`);
   }
 
   createArticle(article: Object): Observable<Object> {
-    return this.http.post(`${this.baseUrl}`, article);
+    return this.http.post(`${this.articlesUrl}`, article);
   }
 
   updateArticle(id: number, value: any): Observable<Object> {
-    return this.http.put(`${this.baseUrl}/${id}`, value);
+    return this.http.put(`${this.articlesUrl}/${id}`, value);
   }
 
   deleteArticle(id: number): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/${id}`, { responseType: 'text' });
+    return this.http.delete(`${this.articlesUrl}/${id}`, { responseType: 'text' });
   }
 
   getArticle(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/${id}`);
+    return this.http.get(`${this.articlesUrl}/${id}`);
   }
 }

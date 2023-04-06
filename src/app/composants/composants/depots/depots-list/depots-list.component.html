@@ -57,9 +57,9 @@
 
           
 
-          <td><a routerLink="/articles-par-depot/{{ depot.id }}"><i class="bi bi-grid bi-lg"></i></a></td>
-          <td><a routerLink="/mouvements-par-depot/{{ depot.id }}"><i class="bi bi-cash-stack bi-lg"></i></a></td>
-          <td><a routerLink="/inventaires-par-depot/:id/{{ depot.id }}"><i class="bi bi-calendar3 bi-lg"></i></a></td>
+          <td><a routerLink="/app-depots/articles-par-depot/{{ depot.id }}"><i class="bi bi-grid bi-lg"></i></a></td>
+          <td><a routerLink="/app-depots/mouvements-par-depot/{{ depot.id }}"><i class="bi bi-cash-stack bi-lg"></i></a></td>
+          <td><a routerLink="/app-depots/inventaires-par-depot/{{ depot.id }}"><i class="bi bi-calendar3 bi-lg"></i></a></td>
         
           <td>
             <button (click)="modifierDepot(depot.id)" class="btn btn-sm btn-outline-primary me-2">Modifier</button>
