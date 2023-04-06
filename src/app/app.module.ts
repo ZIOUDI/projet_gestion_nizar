@@ -17,7 +17,7 @@ import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
-
+import { MatIconModule } from '@angular/material/icon';
 // models
 import {User} from './models/user';
 
@@ -136,7 +136,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
     MatInputModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    MatIconModule
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
