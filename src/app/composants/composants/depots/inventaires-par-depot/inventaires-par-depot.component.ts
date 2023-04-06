@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Inventaire } from 'src/app/models/inventaire';
 import { InventairesService } from 'src/app/services/inventaires/inventaires.service';
 
@@ -17,7 +17,7 @@ export class InventairesParDepotComponent {
   nomDepot!: string;
   codeDepot!: string;
 
-  constructor(private inventaireService: InventairesService, private route: ActivatedRoute) { }
+  constructor(private inventaireService: InventairesService, private route: ActivatedRoute , private router: Router) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
@@ -40,6 +40,10 @@ export class InventairesParDepotComponent {
     });
   }
 
+
+  retourListeDepots(){
+    this.router.navigate(['/app-depots']);
+  }
   
 
 }
