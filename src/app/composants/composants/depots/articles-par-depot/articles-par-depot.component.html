@@ -1,4 +1,9 @@
+<div>
+     <h3>Le Depot {{ this.nomDepot}} ( code de depot : {{ this.codeDepot}}  ) contient les Articles suivants :</h3>
+
+
 <table mat-table class="mat-elevation-z8" [dataSource]="articles">
+
 
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef> Id </th>
@@ -49,4 +54,7 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     
   </table>
+
+
+</div>
   
