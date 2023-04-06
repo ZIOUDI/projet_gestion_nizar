@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Inventaire } from 'src/app/models/inventaire';
 import { InventairesService } from 'src/app/services/inventaires/inventaires.service';
 
 @Component({
@@ -10,18 +11,35 @@ import { InventairesService } from 'src/app/services/inventaires/inventaires.ser
 export class InventairesParDepotComponent {
 
 
-  inventaires!: string[];
+  inventaires!: Inventaire[];
   depotId!: number;
+ 
+  nomDepot!: string;
+  codeDepot!: string;
 
   constructor(private inventaireService: InventairesService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      this.depotId = params['depotId'];
-      this.inventaireService.getInventairesByDepot(this.depotId).subscribe((data : string[])=> {
-        this.inventaires = data;
+
+      this.depotId = params['id'];
+
+      console.log('on va chercher les  inventaires du depot qui a un ID == ' + this.depotId)
+
+      this.inventaireService.getInventairesByDepot(this.depotId).subscribe((data: any) => {
+
+        console.log('la reponse du service inventaireService.getInventairesByDepot est ' + JSON.stringify(data));
+
+        this.inventaires = data.inventaires;
+
+        this.codeDepot = data.codeDepot;
+
+        this.nomDepot = data.nom;
+ 
       });
     });
   }
+
+  
 
 }

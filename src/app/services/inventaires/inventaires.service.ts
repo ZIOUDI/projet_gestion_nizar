@@ -10,27 +10,30 @@ import { Observable } from 'rxjs';
 })
 export class InventairesService {
 
-  private baseUrl = 'http://localhost:8080/api/inventaires';
+  private inventairesUrl = 'http://localhost:3000/inventaires';
+
+  private depotsUrl = 'http://localhost:3000/depots';
+
 
   constructor(private http: HttpClient) { }
 
   getInventairesByDepot(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/depot/${id}`);
+    return this.http.get(`${this.depotsUrl}/${id}`);
   }
 
   createInventaire(inventaire: Object): Observable<Object> {
-    return this.http.post(`${this.baseUrl}`, inventaire);
+    return this.http.post(`${this.inventairesUrl}`, inventaire);
   }
 
   updateInventaire(id: number, value: any): Observable<Object> {
-    return this.http.put(`${this.baseUrl}/${id}`, value);
+    return this.http.put(`${this.inventairesUrl}/${id}`, value);
   }
 
   deleteInventaire(id: number): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/${id}`, { responseType: 'text' });
+    return this.http.delete(`${this.inventairesUrl}/${id}`, { responseType: 'text' });
   }
 
   getInventaire(id: number): Observable<any> {
-    return this.http.get(`${this.baseUrl}/${id}`);
+    return this.http.get(`${this.inventairesUrl}/${id}`);
   }
 }

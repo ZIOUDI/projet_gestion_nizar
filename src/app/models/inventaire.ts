@@ -7,10 +7,9 @@ export class Inventaire {
     constructor(
         public id: number,
         public code: string,
-        public produit: Produit,
         public quantite: number,
         public date: Date,
-        public depot: Depot,
+        public depotId: string,
         public codeInventaire: string
       ) {}
 

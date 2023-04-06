@@ -97,7 +97,41 @@
           "dateAjout": "2023-04-06T08:00:00Z"
         }
       ],
-      "inventaire": [],
+      "inventaires": [
+        {
+          "id": 1,
+          "code": "INV001",
+          "quantite": 20,
+          "date": "2022-03-15T09:30:00Z",
+          "depotId": "1",
+          "codeInventaire": "INVT20220315"
+        },
+        {
+          "id": 2,
+          "code": "INV002",
+          "quantite": 15,
+          "date": "2022-03-16T14:45:00Z",
+          "depotId": "1",
+          "codeInventaire": "INVT20220316"
+        },
+        {
+          "id": 3,
+          "code": "INV003",
+          "quantite": 10,
+          "date": "2022-03-17T11:15:00Z",
+          "depotId": "1",
+          "codeInventaire": "INVT20220317"
+        },
+        {
+          "id": 4,
+          "code": "INV004",
+          "quantite": 5,
+          "date": "2022-03-18T16:00:00Z",
+          "depotId": "1",
+          "codeInventaire": "INVT20220318"
+        }
+      ]
+      ,
       "mouvements": [],
       "couts": 0
     }
@@ -144,7 +178,48 @@
           "dateAjout": "2023-04-06"
         }
       ],
-      "inventaire": [],
+      "inventaires": [{
+        "id": 5,
+        "code": "INV005",
+        "quantite": 8,
+        "date": "2022-03-20T10:00:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220320"
+      }
+      , {
+        "id": 6,
+        "code": "INV006",
+        "quantite": 12,
+        "date": "2022-03-21T14:30:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220321"
+      }, {
+        "id": 7,
+        "code": "INV007",
+        "quantite": 6,
+        "date": "2022-03-22T09:15:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220322"
+      } ,
+      {
+        "id": 8,
+        "code": "INV008",
+        "quantite": 18,
+        "date": "2022-03-23T16:45:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220323"
+      } ,
+      {
+        "id": 8,
+        "code": "INV008",
+        "quantite": 18,
+        "date": "2022-03-23T16:45:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220323"
+      }
+      
+      
+       ],
       "mouvements": [],
       "couts": 0
     }
@@ -191,7 +266,10 @@
           "dateAjout": "2023-03-10"
         }
       ],
-      "inventaire": [],
+      "inventaires": [
+        [  {    "id": 1,    "code": "INV-001",    "quantite": 10,    "date": "2022-02-14T09:30:00.000Z",    "depotId": "3",    "codeInventaire": "ABC123"  },  {    "id": 2,    "code": "INV-002",    "quantite": 5,    "date": "2022-03-01T13:45:00.000Z",    "depotId": "3",    "codeInventaire": "DEF456"  },  {    "id": 3,    "code": "INV-003",    "quantite": 20,    "date": "2022-04-10T10:00:00.000Z",    "depotId": "3",    "codeInventaire": "GHI789"  },  {    "id": 4,    "code": "INV-004",    "quantite": 8,    "date": "2022-05-15T14:15:00.000Z",    "depotId": "3",    "codeInventaire": "JKL012"  },  {    "id": 5,    "code": "INV-005",    "quantite": 12,    "date": "2022-06-20T11:30:00.000Z",    "depotId": "3",    "codeInventaire": "MNO345"  },  {    "id": 6,    "code": "INV-006",    "quantite": 3,    "date": "2022-07-25T15:45:00.000Z",    "depotId": "3",    "codeInventaire": "PQR678"  }]
+
+      ],
       "mouvements": [],
       "couts": 0
     },
@@ -203,7 +281,7 @@
       "responsable": "Kefi Ali",
       "capacite": 369,
       "articles": [],
-      "inventaire": [],
+      "inventaires": [],
       "mouvements": [],
       "couts": 0
     }
@@ -261,5 +339,5 @@
   ]
 
 
-  
+
 }
