@@ -13,6 +13,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 
+// Utiliser les composants Material Design dans vos composants
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
 // models
 import {User} from './models/user';
 
@@ -22,8 +27,8 @@ import { HeaderComponent } from './composants/header/header.component';
 import { FooterComponent } from './composants/footer/footer.component';
 import { PageDashboardComponent } from './composants/page-dashboard/page-dashboard.component';
 import { DepotsComponent } from './composants/composants/depots/depots.component';
-import { ProduitsComponent } from './composants/composants/produits/produits.component';
-import { StocksComponent } from './composants/composants/stocks/stocks.component';
+import { ProduitsComponent } from './composants/produits/produits.component';
+import { StocksComponent } from './composants/stocks/stocks.component';
 import { EntreeComponent } from './composants/composants/entrees/entrees.component';
 import { SortieComponent } from './composants/composants/sorties/sorties.component';
 import { InventairesComponent } from './composants/inventaires/inventaires.component';
@@ -41,6 +46,7 @@ import { EntreeDashboardComponent } from './composants/page-dashboard/entree-das
 import { SortieDashboardComponent } from './composants/page-dashboard/sortie-dashboard/sortie-dashboard.component';
 import { InventaireDashboardComponent } from './composants/page-dashboard/inventaire-dashboard/inventaire-dashboard.component';
 import { GlobalDashboardComponent } from './composants/page-dashboard/global-dashboard/global-dashboard.component';
+
 
 // services
 import {UserService } from './services/users/users.service';
@@ -61,7 +67,11 @@ import { DepotsService } from './services/depots/depots.service';
 import { ArticlesParDepotComponent } from './composants/composants/depots/articles-par-depot/articles-par-depot.component';
 import { MouvementsParDepotComponent } from './composants/composants/depots/mouvements-par-depot/mouvements-par-depot.component';
 import { InventairesParDepotComponent } from './composants/composants/depots/inventaires-par-depot/inventaires-par-depot.component';
-import { ProduitService } from './services/produit.service';
+import { ArticlesService } from './services/articles/articles.service';
+import { InventairesService } from './services/inventaires/inventaires.service';
+import { MouvementsService } from './services/mouvements/mouvements.service';
+import { ProduitService } from './services/produits/produit.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -120,11 +130,18 @@ import { ProduitService } from './services/produit.service';
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+
+
+    MatInputModule,
+    MatButtonModule,
+    MatTableModule,
+    MatIconModule
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
-       UserService,DepotsService , ProduitService
+       UserService,DepotsService , ProduitService, ArticlesService,InventairesService,MouvementsService
   ],
   bootstrap: [AppComponent]
 })

@@ -61,6 +61,10 @@
       "role": "Gestionnaire"
     }
   ],
+
+
+
+
   "depots": [
     {
       "id": 1,
@@ -69,10 +73,69 @@
       "adresse": "5 rue de la rupublique Sfax",
       "responsable": "Mezioudi Mehdi",
       "capacite": 102,
-      "inventaire": [],
+      "articles": [
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 2,
+          "nom": "Poire",
+          "description": "Fruit jaune et ovale",
+          "prix": 2,
+          "quantite": 15,
+          "seuilMinimum": 3,
+          "seuilMaximum": 30,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        }
+      ],
+      "inventaires": [
+        {
+          "id": 1,
+          "code": "INV001",
+          "quantite": 20,
+          "date": "2022-03-15T09:30:00Z",
+          "depotId": "1",
+          "codeInventaire": "INVT20220315"
+        },
+        {
+          "id": 2,
+          "code": "INV002",
+          "quantite": 15,
+          "date": "2022-03-16T14:45:00Z",
+          "depotId": "1",
+          "codeInventaire": "INVT20220316"
+        },
+        {
+          "id": 3,
+          "code": "INV003",
+          "quantite": 10,
+          "date": "2022-03-17T11:15:00Z",
+          "depotId": "1",
+          "codeInventaire": "INVT20220317"
+        },
+        {
+          "id": 4,
+          "code": "INV004",
+          "quantite": 5,
+          "date": "2022-03-18T16:00:00Z",
+          "depotId": "1",
+          "codeInventaire": "INVT20220318"
+        }
+      ]
+      ,
       "mouvements": [],
       "couts": 0
-    },
+    }
+    ,
     {
       "id": 2,
       "codeDepot": "Dep2088",
@@ -80,10 +143,87 @@
       "adresse": "9 rue de la rupublique Sfax",
       "responsable": "Felhi Zied",
       "capacite": 150,
-      "inventaire": [],
+      "articles": [
+        {
+          "id": 1,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 2,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 3,
+          "nom": "Classeur",
+          "description": "Classeur à 4 anneaux",
+          "prix": 7,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        }
+      ],
+      "inventaires": [{
+        "id": 5,
+        "code": "INV005",
+        "quantite": 8,
+        "date": "2022-03-20T10:00:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220320"
+      }
+      , {
+        "id": 6,
+        "code": "INV006",
+        "quantite": 12,
+        "date": "2022-03-21T14:30:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220321"
+      }, {
+        "id": 7,
+        "code": "INV007",
+        "quantite": 6,
+        "date": "2022-03-22T09:15:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220322"
+      } ,
+      {
+        "id": 8,
+        "code": "INV008",
+        "quantite": 18,
+        "date": "2022-03-23T16:45:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220323"
+      } ,
+      {
+        "id": 8,
+        "code": "INV008",
+        "quantite": 18,
+        "date": "2022-03-23T16:45:00Z",
+        "depotId": "2",
+        "codeInventaire": "INVT20220323"
+      }
+
+
+       ],
       "mouvements": [],
       "couts": 0
-    },
+    }
+    ,
     {
       "id": 3,
       "codeDepot": "Dep5240",
@@ -91,7 +231,45 @@
       "adresse": "15 rue de la paie Sfax",
       "responsable": "Saoudi Nidhal",
       "capacite": 245,
-      "inventaire": [],
+      "articles": [
+        {
+          "id": 1,
+          "nom": "Tomate",
+          "description": "Tomates mûres et juteuses",
+          "prix": 2.5,
+          "quantite": 200,
+          "seuilMinimum": 20,
+          "seuilMaximum": 300,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-01"
+        },
+        {
+          "id": 2,
+          "nom": "Concombre",
+          "description": "Concombres frais et croquants",
+          "prix": 1.5,
+          "quantite": 150,
+          "seuilMinimum": 15,
+          "seuilMaximum": 250,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-05"
+        },
+        {
+          "id": 3,
+          "nom": "Poivron",
+          "description": "Poivrons rouges, verts et jaunes",
+          "prix": 3,
+          "quantite": 100,
+          "seuilMinimum": 10,
+          "seuilMaximum": 150,
+          "categorie": "Légumes",
+          "dateAjout": "2023-03-10"
+        }
+      ],
+      "inventaires": [
+        [  {    "id": 1,    "code": "INV-001",    "quantite": 10,    "date": "2022-02-14T09:30:00.000Z",    "depotId": "3",    "codeInventaire": "ABC123"  },  {    "id": 2,    "code": "INV-002",    "quantite": 5,    "date": "2022-03-01T13:45:00.000Z",    "depotId": "3",    "codeInventaire": "DEF456"  },  {    "id": 3,    "code": "INV-003",    "quantite": 20,    "date": "2022-04-10T10:00:00.000Z",    "depotId": "3",    "codeInventaire": "GHI789"  },  {    "id": 4,    "code": "INV-004",    "quantite": 8,    "date": "2022-05-15T14:15:00.000Z",    "depotId": "3",    "codeInventaire": "JKL012"  },  {    "id": 5,    "code": "INV-005",    "quantite": 12,    "date": "2022-06-20T11:30:00.000Z",    "depotId": "3",    "codeInventaire": "MNO345"  },  {    "id": 6,    "code": "INV-006",    "quantite": 3,    "date": "2022-07-25T15:45:00.000Z",    "depotId": "3",    "codeInventaire": "PQR678"  }]
+
+      ],
       "mouvements": [],
       "couts": 0
     },
@@ -102,22 +280,61 @@
       "adresse": "23 rue de la paie Sfax",
       "responsable": "Kefi Ali",
       "capacite": 369,
-      "inventaire": [],
+      "articles": [],
+      "inventaires": [],
       "mouvements": [],
       "couts": 0
     }
   ],
+
+
+
+
+
+
   "Mouvement": [],
-  "entrees": [],
-  "Sorties": [
+
+
+
+  "entrees": [
     {
       "id": 1,
-      "code": "1",
-      "produitId": "1",
-      "quantite": "36",
-      "dateEntree": "11111-11-11",
-      "depotId": "1",
-      "codeSortie": ""
+      "code": "",
+      "produitId": "",
+      "quantite": 0,
+      "dateEntree": "2023-04-01T10:24:04.527Z",
+      "depotId": "",
+      "codeEntree": ""
+    },
+    {
+      "id": 2,
+      "code": "",
+      "produitId": "",
+      "quantite": 0,
+      "dateEntree": "2023-04-01T10:24:58.107Z",
+      "depotId": "",
+      "codeEntree": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "produitId": "",
+      "quantite": 0,
+      "dateEntree": "2023-04-01T10:31:35.251Z",
+      "depotId": "",
+      "codeEntree": ""
+    },
+    {
+      "id": 4,
+      "code": "",
+      "produitId": "",
+      "quantite": 0,
+      "dateEntree": "2023-04-01T10:32:05.971Z",
+      "depotId": "",
+      "codeEntree": ""
+    },
+    {
+      "id": 5
     }
   ],
   "produits": []
