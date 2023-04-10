@@ -7,8 +7,7 @@ export class Produit {
         public codeProduit: string,
         public nom: string,
         public description: string,
-        public prix: number,
-        public stock: Stock[]
+        public prix: number
        ) {}
 
 }
