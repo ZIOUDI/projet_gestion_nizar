@@ -1,1 +1,51 @@
-<p>articles-list works!</p>
+
+<div>
+  <h3>Liste des Articles   :</h3>
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      
+
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Description</th>
+      <th>Prix</th>
+      <th>Quantité</th>
+      <th>Seuil minimum</th>
+      <th>Seuil maximum</th>
+      <th>Catégorie</th>
+      <th>Date d'ajout</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    
+       <tr *ngFor="let article of articles">
+
+        <td>{{ article.id }}</td>
+        <td>{{ article.nom }}</td>
+        <td>{{ article.description }}</td>
+        <td>{{ article.prix }}</td>
+        <td>{{ article.quantite }}</td>
+        <td>{{ article.seuilMinimum }}</td>
+        <td>{{ article.seuilMaximum }}</td>
+        <td>{{ article.categorie }}</td>
+        <td>{{ article.dateAjout   }}</td>
+
+        <td>
+            <button (click)="modifierArticle(article.id)" class="mat-icon-button">
+               edit 
+            </button>
+            <button (click)="supprimerArticle(article.id)" class="mat-icon-button">
+               delete 
+            </button>
+          </td>
+
+           
+    </tr>
+  </tbody>
+</table>
+
+</div>

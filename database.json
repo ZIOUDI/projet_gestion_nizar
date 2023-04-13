@@ -337,5 +337,98 @@
       "id": 5
     }
   ],
-  "produits": []
+  "produits": [],
+  "articles": [
+
+    {
+      "id": 1,
+      "nom": "Pomme",
+      "description": "Fruit rouge et rond",
+      "prix": 1.5,
+      "quantite": 20,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Fruits",
+      "dateAjout": "2023-04-06T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "nom": "Poire",
+      "description": "Fruit jaune et ovale",
+      "prix": 2,
+      "quantite": 15,
+      "seuilMinimum": 3,
+      "seuilMaximum": 30,
+      "categorie": "Fruits",
+      "dateAjout": "2023-04-06T08:00:00Z"
+    },
+
+    {
+      "id": 3,
+      "nom": "Cahier",
+      "description": "Cahier 100 pages",
+      "prix": 2.5,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-06"
+    },
+    {
+      "id": 4,
+      "nom": "Stylo",
+      "description": "Stylo à bille noir",
+      "prix": 0.5,
+      "quantite": 100,
+      "seuilMinimum": 20,
+      "seuilMaximum": 200,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-06"
+    },
+    {
+      "id": 5,
+      "nom": "Classeur",
+      "description": "Classeur à 4 anneaux",
+      "prix": 7,
+      "quantite": 20,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-06"
+    },
+
+    {
+      "id": 6,
+      "nom": "Tomate",
+      "description": "Tomates mûres et juteuses",
+      "prix": 2.5,
+      "quantite": 200,
+      "seuilMinimum": 20,
+      "seuilMaximum": 300,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-01"
+    },
+    {
+      "id": 7,
+      "nom": "Concombre",
+      "description": "Concombres frais et croquants",
+      "prix": 1.5,
+      "quantite": 150,
+      "seuilMinimum": 15,
+      "seuilMaximum": 250,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-05"
+    },
+    {
+      "id": 8,
+      "nom": "Poivron",
+      "description": "Poivrons rouges, verts et jaunes",
+      "prix": 3,
+      "quantite": 100,
+      "seuilMinimum": 10,
+      "seuilMaximum": 150,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-10"
+    }
+  ]
 }

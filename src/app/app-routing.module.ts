@@ -37,6 +37,8 @@ import { ListProduitComponent } from './composants/composants/produits/list-prod
 import { CreateProduitComponent } from './composants/composants/produits/create-produit/create-produit.component';
 import { DeleteProduitComponent } from './composants/composants/produits/delete-produit/delete-produit.component';
 import { EditProduitComponent } from './composants/composants/produits/edit-produit/edit-produit.component';
+import { ArticlesComponent } from './composants/composants/articles/articles.component';
+import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
 
 
 
@@ -152,6 +154,29 @@ const routes: Routes = [
     ]
   },
 
+
+  { path: "app-articles", component: ArticlesComponent ,
+
+  children: [
+
+    {
+      path: '',
+      component: ArticlesListComponent,
+    },
+    {
+      path: 'create-article',
+      component: CreateDepotComponent,
+    },
+    {
+      path: 'edit-article/:id',
+      component: EditDepotComponent,
+    },
+    {
+      path: 'delete-article/:id',
+      component: DeleteDepotComponent,
+    } 
+  ]
+},
  
 
   {

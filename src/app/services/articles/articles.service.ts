@@ -2,6 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Article } from 'src/app/models/article';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +32,8 @@ export class ArticlesService {
     return this.http.delete(`${this.articlesUrl}/${id}`, { responseType: 'text' });
   }
 
-  getArticle(id: number): Observable<any> {
-    return this.http.get(`${this.articlesUrl}/${id}`);
+  getArticles(): Observable<any> {
+     return this.http.get<Article[]>(this.articlesUrl);
+
   }
 }

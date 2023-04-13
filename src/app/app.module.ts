@@ -48,6 +48,8 @@ import { InventaireDashboardComponent } from './composants/page-dashboard/invent
 import { GlobalDashboardComponent } from './composants/page-dashboard/global-dashboard/global-dashboard.component';
 
 
+import { ArticlesComponent } from './composants/composants/articles/articles.component';
+
 // services
 import {UserService } from './services/users/users.service';
 import { DeleteUserComponent } from './composants/composants/users/delete-user/delete-user.component';
@@ -72,7 +74,7 @@ import { InventairesService } from './services/inventaires/inventaires.service';
 import { MouvementsService } from './services/mouvements/mouvements.service';
 import { ProduitService } from './services/produits/produit.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { CommonModule } from '@angular/common';  
 
 
 
@@ -123,7 +125,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DeleteDepotComponent,
     ArticlesParDepotComponent,
     MouvementsParDepotComponent,
-    InventairesParDepotComponent
+    InventairesParDepotComponent,
+    ArticlesComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,
@@ -137,7 +140,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatButtonModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    CommonModule
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
