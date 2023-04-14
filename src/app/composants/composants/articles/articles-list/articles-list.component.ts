@@ -4,6 +4,9 @@ import { Router } from '@angular/router';
 import { Article } from 'src/app/models/article';
 
 import { ArticlesService } from 'src/app/services/articles/articles.service';
+import { DepotsComponent } from '../../depots/depots.component';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupDepotsComponent } from '../popup-depots/popup-depots.component';
 
 @Component({
   selector: 'app-articles-list',
@@ -11,14 +14,14 @@ import { ArticlesService } from 'src/app/services/articles/articles.service';
   styleUrls: ['./articles-list.component.scss']
 })
 export class ArticlesListComponent implements OnInit {
-
+ 
   articles!: Article[];  // votre liste d'articles
   currentPage: number = 1; // la page actuelle (par défaut, la première page)
   itemsPerPage: number = 10; // nombre d'articles par page
 
   pageSizeOptions = [5, 10, 20];
 
-  constructor(private articleService: ArticlesService) { }
+  constructor(private articleService: ArticlesService,private dialog: MatDialog) { }
 
   ngOnInit() {
     console.log(' ArticlesListComponent - methode -  ngOnInit')
@@ -49,6 +52,18 @@ export class ArticlesListComponent implements OnInit {
     return pages;
   }
   
+
+  ouvrirPopup(articleID:number): void {
+    const dialogRef = this.dialog.open(PopupDepotsComponent, {
+      width: '800px',
+      height: '800px',
+      data: articleID
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 
 
 

@@ -19,6 +19,9 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
+
+import { MatDialogModule } from '@angular/material/dialog';
+
 // models
 import {User} from './models/user';
 
@@ -77,6 +80,7 @@ import { ProduitService } from './services/produits/produit.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';  
 import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
+import { PopupDepotsComponent } from './composants/composants/articles/popup-depots/popup-depots.component';
 
 
 
@@ -129,7 +133,8 @@ import { ArticlesListComponent } from './composants/composants/articles/articles
     ArticlesParDepotComponent,
     MouvementsParDepotComponent,
     InventairesParDepotComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    PopupDepotsComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,
@@ -145,7 +150,8 @@ import { ArticlesListComponent } from './composants/composants/articles/articles
     MatTableModule,
     MatIconModule,
     MatPaginatorModule,
-    CommonModule
+    CommonModule,
+    MatDialogModule
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs

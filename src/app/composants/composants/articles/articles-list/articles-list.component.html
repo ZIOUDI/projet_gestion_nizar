@@ -15,6 +15,7 @@
       <th>Seuil maximum</th>
       <th>Catégorie</th>
       <th>Date d'ajout</th>
+      <th>Affecter article à un Dépot</th>
     </tr>
   </thead>
   <tbody>
@@ -31,6 +32,12 @@
         <td>{{ article.categorie }}</td>
         <td>{{ article.dateAjout  | date }}</td>
 
+        <td style="text-align: center;">
+            <button (click)="ouvrirPopup(article.id)" class="mat-icon-button custom-button">
+              <mat-icon>input</mat-icon>
+            </button>
+          </td>
+
         <td>
             <button (click)="modifierArticle(article.id)" class="mat-icon-button">
               <mat-icon>edit</mat-icon>
@@ -40,6 +47,9 @@
             </button>
           </td>
 
+       
+
+      
 
     </tr>
   </tbody>

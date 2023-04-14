@@ -1,0 +1,33 @@
+<div>
+    <h3>Liste des Depots :</h3>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Code Dépôt</th>
+                <th>Nom</th>
+                <th>Adresse</th>
+                <th>Responsable</th>
+                <th>Capacité</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr *ngFor="let depot of depots" [class.selected]="depot === selectedDepot" (click)="selectedDepot = depot">
+                <td>{{ depot.codeDepot }}</td>
+                <td>{{ depot.nom }}</td>
+                <td>{{ depot.adresse }}</td>
+                <td>{{ depot.responsable }}</td>
+                <td>{{ depot.capacite }}</td>
+
+            </tr>
+        </tbody>
+    </table>
+        <br> <br> <br>
+  
+    <div class="text-center mt-3">
+        <button class="btn btn-primary" [disabled]="!selectedDepot" (click)="affecter()">Affecter</button>
+    </div>
+
+</div>
