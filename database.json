@@ -145,7 +145,7 @@
       "capacite": 150,
       "articles": [
         {
-          "id": 1,
+          "id": 3,
           "nom": "Cahier",
           "description": "Cahier 100 pages",
           "prix": 2.5,
@@ -156,7 +156,7 @@
           "dateAjout": "2023-04-06"
         },
         {
-          "id": 2,
+          "id": 4,
           "nom": "Stylo",
           "description": "Stylo à bille noir",
           "prix": 0.5,
@@ -167,7 +167,7 @@
           "dateAjout": "2023-04-06"
         },
         {
-          "id": 3,
+          "id": 5,
           "nom": "Classeur",
           "description": "Classeur à 4 anneaux",
           "prix": 7,
@@ -233,7 +233,7 @@
       "capacite": 245,
       "articles": [
         {
-          "id": 1,
+          "id": 6,
           "nom": "Tomate",
           "description": "Tomates mûres et juteuses",
           "prix": 2.5,
@@ -244,7 +244,7 @@
           "dateAjout": "2023-03-01"
         },
         {
-          "id": 2,
+          "id": 7,
           "nom": "Concombre",
           "description": "Concombres frais et croquants",
           "prix": 1.5,
@@ -255,7 +255,7 @@
           "dateAjout": "2023-03-05"
         },
         {
-          "id": 3,
+          "id": 8,
           "nom": "Poivron",
           "description": "Poivrons rouges, verts et jaunes",
           "prix": 3,
@@ -429,6 +429,138 @@
       "seuilMaximum": 150,
       "categorie": "Légumes",
       "dateAjout": "2023-03-10"
+    },
+    {
+      "id": 9,
+      "nom": "Banane",
+      "description": "Fruit jaune et allongé",
+      "prix": 1.8,
+      "quantite": 25,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Fruits",
+      "dateAjout": "2023-04-07"
+    },
+    {
+      "id": 10,
+      "nom": "Orange",
+      "description": "Fruit orange et rond",
+      "prix": 2.2,
+      "quantite": 30,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Fruits",
+      "dateAjout": "2023-04-07"
+    },
+    {
+      "id": 11,
+      "nom": "Feuilles de papier",
+      "description": "Paquet de 100 feuilles de papier blanc",
+      "prix": 4,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 12,
+      "nom": "Crayon à papier",
+      "description": "Crayon à papier HB",
+      "prix": 0.2,
+      "quantite": 200,
+      "seuilMinimum": 20,
+      "seuilMaximum": 200,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 13,
+      "nom": "Gomme",
+      "description": "Gomme blanche pour effacer le crayon",
+      "prix": 0.3,
+      "quantite": 100,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Papeterie",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 14,
+      "nom": "Courgette",
+      "description": "Courgette verte et croquante",
+      "prix": 1.5,
+      "quantite": 50,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-15"
+    },
+    {
+      "id": 15,
+      "nom": "Aubergine",
+      "description": "Aubergine violette et savoureuse",
+      "prix": 2.5,
+      "quantite": 35,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Légumes",
+      "dateAjout": "2023-03-15"
+    },{
+      "id": 16,
+      "nom": "Brosse à dents",
+      "description": "Brosse à dents souple",
+      "prix": 2,
+      "quantite": 30,
+      "seuilMinimum": 5,
+      "seuilMaximum": 50,
+      "categorie": "Hygiène bucco-dentaire",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 17,
+      "nom": "Dentifrice",
+      "description": "Dentifrice blanchissant",
+      "prix": 3.5,
+      "quantite": 25,
+      "seuilMinimum": 5,
+      "seuilMaximum": 30,
+      "categorie": "Hygiène bucco-dentaire",
+      "dateAjout": "2023-04-08"
+    },
+    {
+      "id": 18,
+      "nom": "Shampoing",
+      "description": "Shampoing pour cheveux secs",
+      "prix": 6,
+      "quantite": 20,
+      "seuilMinimum": 5,
+      "seuilMaximum": 30,
+      "categorie": "Hygiène corporelle",
+      "dateAjout": "2023-04-10"
+    },
+    {
+      "id": 19,
+      "nom": "Savon",
+      "description": "Savon liquide pour les mains",
+      "prix": 2.5,
+      "quantite": 40,
+      "seuilMinimum": 10,
+      "seuilMaximum": 60,
+      "categorie": "Hygiène corporelle",
+      "dateAjout": "2023-04-10"
+    },
+    {
+      "id": 20,
+      "nom": "Mouchoirs en papier",
+      "description": "Paquet de 100 mouchoirs en papier",
+      "prix": 1.75,
+      "quantite": 60,
+      "seuilMinimum": 10,
+      "seuilMaximum": 100,
+      "categorie": "Hygiène corporelle",
+      "dateAjout": "2023-04-11"
     }
+    
   ]
 }
