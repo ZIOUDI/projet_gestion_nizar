@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
+import { MatPaginatorModule } from '@angular/material/paginator';
 // models
 import {User} from './models/user';
 
@@ -143,6 +144,7 @@ import { ArticlesListComponent } from './composants/composants/articles/articles
     MatButtonModule,
     MatTableModule,
     MatIconModule,
+    MatPaginatorModule,
     CommonModule
 
   ],
