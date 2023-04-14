@@ -75,6 +75,7 @@ import { MouvementsService } from './services/mouvements/mouvements.service';
 import { ProduitService } from './services/produits/produit.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';  
+import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
 
 
 
@@ -120,6 +121,7 @@ import { CommonModule } from '@angular/common';
     EditSortieComponent,
     DeleteSortieComponent,
     DepotsListComponent,
+    ArticlesListComponent,
     CreateDepotComponent,
     EditDepotComponent,
     DeleteDepotComponent,

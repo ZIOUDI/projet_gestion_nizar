@@ -6,8 +6,6 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      
-
       <th>Id</th>
       <th>Nom</th>
       <th>Description</th>
@@ -17,11 +15,10 @@
       <th>Seuil maximum</th>
       <th>Catégorie</th>
       <th>Date d'ajout</th>
-
     </tr>
   </thead>
   <tbody>
-    
+
        <tr *ngFor="let article of articles">
 
         <td>{{ article.id }}</td>
@@ -32,18 +29,18 @@
         <td>{{ article.seuilMinimum }}</td>
         <td>{{ article.seuilMaximum }}</td>
         <td>{{ article.categorie }}</td>
-        <td>{{ article.dateAjout   }}</td>
+        <td>{{ article.dateAjout  | date }}</td>
 
         <td>
             <button (click)="modifierArticle(article.id)" class="mat-icon-button">
-               edit 
+              <mat-icon>edit</mat-icon>
             </button>
             <button (click)="supprimerArticle(article.id)" class="mat-icon-button">
-               delete 
+              <mat-icon>delete</mat-icon>
             </button>
           </td>
 
-           
+
     </tr>
   </tbody>
 </table>

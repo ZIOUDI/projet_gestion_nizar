@@ -26,7 +26,7 @@ export class ArticlesListComponent implements OnInit  {
      });
   }
 
-  
+
 modifierArticle(arg0: any) {
 throw new Error('Method not implemented.');
 }
