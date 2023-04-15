@@ -61,10 +61,6 @@
       "role": "Gestionnaire"
     }
   ],
-
-
-
-
   "depots": [
     {
       "id": 1,
@@ -130,12 +126,10 @@
           "depotId": "1",
           "codeInventaire": "INVT20220318"
         }
-      ]
-      ,
+      ],
       "mouvements": [],
       "couts": 0
-    }
-    ,
+    },
     {
       "id": 2,
       "codeDepot": "Dep2088",
@@ -178,52 +172,51 @@
           "dateAjout": "2023-04-06"
         }
       ],
-      "inventaires": [{
-        "id": 5,
-        "code": "INV005",
-        "quantite": 8,
-        "date": "2022-03-20T10:00:00Z",
-        "depotId": "2",
-        "codeInventaire": "INVT20220320"
-      }
-      , {
-        "id": 6,
-        "code": "INV006",
-        "quantite": 12,
-        "date": "2022-03-21T14:30:00Z",
-        "depotId": "2",
-        "codeInventaire": "INVT20220321"
-      }, {
-        "id": 7,
-        "code": "INV007",
-        "quantite": 6,
-        "date": "2022-03-22T09:15:00Z",
-        "depotId": "2",
-        "codeInventaire": "INVT20220322"
-      } ,
-      {
-        "id": 8,
-        "code": "INV008",
-        "quantite": 18,
-        "date": "2022-03-23T16:45:00Z",
-        "depotId": "2",
-        "codeInventaire": "INVT20220323"
-      } ,
-      {
-        "id": 8,
-        "code": "INV008",
-        "quantite": 18,
-        "date": "2022-03-23T16:45:00Z",
-        "depotId": "2",
-        "codeInventaire": "INVT20220323"
-      }
-
-
-       ],
+      "inventaires": [
+        {
+          "id": 5,
+          "code": "INV005",
+          "quantite": 8,
+          "date": "2022-03-20T10:00:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220320"
+        },
+        {
+          "id": 6,
+          "code": "INV006",
+          "quantite": 12,
+          "date": "2022-03-21T14:30:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220321"
+        },
+        {
+          "id": 7,
+          "code": "INV007",
+          "quantite": 6,
+          "date": "2022-03-22T09:15:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220322"
+        },
+        {
+          "id": 8,
+          "code": "INV008",
+          "quantite": 18,
+          "date": "2022-03-23T16:45:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220323"
+        },
+        {
+          "id": 8,
+          "code": "INV008",
+          "quantite": 18,
+          "date": "2022-03-23T16:45:00Z",
+          "depotId": "2",
+          "codeInventaire": "INVT20220323"
+        }
+      ],
       "mouvements": [],
       "couts": 0
-    }
-    ,
+    },
     {
       "id": 3,
       "codeDepot": "Dep5240",
@@ -267,8 +260,56 @@
         }
       ],
       "inventaires": [
-        [  {    "id": 1,    "code": "INV-001",    "quantite": 10,    "date": "2022-02-14T09:30:00.000Z",    "depotId": "3",    "codeInventaire": "ABC123"  },  {    "id": 2,    "code": "INV-002",    "quantite": 5,    "date": "2022-03-01T13:45:00.000Z",    "depotId": "3",    "codeInventaire": "DEF456"  },  {    "id": 3,    "code": "INV-003",    "quantite": 20,    "date": "2022-04-10T10:00:00.000Z",    "depotId": "3",    "codeInventaire": "GHI789"  },  {    "id": 4,    "code": "INV-004",    "quantite": 8,    "date": "2022-05-15T14:15:00.000Z",    "depotId": "3",    "codeInventaire": "JKL012"  },  {    "id": 5,    "code": "INV-005",    "quantite": 12,    "date": "2022-06-20T11:30:00.000Z",    "depotId": "3",    "codeInventaire": "MNO345"  },  {    "id": 6,    "code": "INV-006",    "quantite": 3,    "date": "2022-07-25T15:45:00.000Z",    "depotId": "3",    "codeInventaire": "PQR678"  }]
-
+        [
+          {
+            "id": 1,
+            "code": "INV-001",
+            "quantite": 10,
+            "date": "2022-02-14T09:30:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "ABC123"
+          },
+          {
+            "id": 2,
+            "code": "INV-002",
+            "quantite": 5,
+            "date": "2022-03-01T13:45:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "DEF456"
+          },
+          {
+            "id": 3,
+            "code": "INV-003",
+            "quantite": 20,
+            "date": "2022-04-10T10:00:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "GHI789"
+          },
+          {
+            "id": 4,
+            "code": "INV-004",
+            "quantite": 8,
+            "date": "2022-05-15T14:15:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "JKL012"
+          },
+          {
+            "id": 5,
+            "code": "INV-005",
+            "quantite": 12,
+            "date": "2022-06-20T11:30:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "MNO345"
+          },
+          {
+            "id": 6,
+            "code": "INV-006",
+            "quantite": 3,
+            "date": "2022-07-25T15:45:00.000Z",
+            "depotId": "3",
+            "codeInventaire": "PQR678"
+          }
+        ]
       ],
       "mouvements": [],
       "couts": 0
@@ -280,22 +321,69 @@
       "adresse": "23 rue de la paie Sfax",
       "responsable": "Kefi Ali",
       "capacite": 369,
-      "articles": [],
+      "articles": [
+        {
+          "id": 16,
+          "nom": "Brosse à dents",
+          "description": "Brosse à dents souple",
+          "prix": 2,
+          "quantite": 30,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Hygiène bucco-dentaire",
+          "dateAjout": "2023-04-08"
+        },
+        {
+          "id": 17,
+          "nom": "Dentifrice",
+          "description": "Dentifrice blanchissant",
+          "prix": 3.5,
+          "quantite": 25,
+          "seuilMinimum": 5,
+          "seuilMaximum": 30,
+          "categorie": "Hygiène bucco-dentaire",
+          "dateAjout": "2023-04-08"
+        },
+        {
+          "id": 18,
+          "nom": "Shampoing",
+          "description": "Shampoing pour cheveux secs",
+          "prix": 6,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 30,
+          "categorie": "Hygiène corporelle",
+          "dateAjout": "2023-04-10"
+        },
+        {
+          "id": 19,
+          "nom": "Savon",
+          "description": "Savon liquide pour les mains",
+          "prix": 2.5,
+          "quantite": 40,
+          "seuilMinimum": 10,
+          "seuilMaximum": 60,
+          "categorie": "Hygiène corporelle",
+          "dateAjout": "2023-04-10"
+        },
+        {
+          "id": 20,
+          "nom": "Mouchoirs en papier",
+          "description": "Paquet de 100 mouchoirs en papier",
+          "prix": 1.75,
+          "quantite": 60,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Hygiène corporelle",
+          "dateAjout": "2023-04-11"
+        }
+      ],
       "inventaires": [],
       "mouvements": [],
       "couts": 0
     }
   ],
-
-
-
-
-
-
   "Mouvement": [],
-
-
-
   "entrees": [
     {
       "id": 1,
@@ -339,7 +427,6 @@
   ],
   "produits": [],
   "articles": [
-
     {
       "id": 1,
       "nom": "Pomme",
@@ -362,7 +449,6 @@
       "categorie": "Fruits",
       "dateAjout": "2023-04-06T08:00:00Z"
     },
-
     {
       "id": 3,
       "nom": "Cahier",
@@ -396,7 +482,6 @@
       "categorie": "Papeterie",
       "dateAjout": "2023-04-06"
     },
-
     {
       "id": 6,
       "nom": "Tomate",
@@ -506,7 +591,8 @@
       "seuilMaximum": 50,
       "categorie": "Légumes",
       "dateAjout": "2023-03-15"
-    },{
+    },
+    {
       "id": 16,
       "nom": "Brosse à dents",
       "description": "Brosse à dents souple",
@@ -561,6 +647,5 @@
       "categorie": "Hygiène corporelle",
       "dateAjout": "2023-04-11"
     }
-    
   ]
 }

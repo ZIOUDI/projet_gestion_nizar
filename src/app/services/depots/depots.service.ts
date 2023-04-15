@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, tap, catchError, throwError } from 'rxjs';
+import { Article } from 'src/app/models/article';
 import { Depot } from 'src/app/models/depot';
 
 @Injectable({
@@ -54,5 +55,11 @@ export class DepotsService {
   deleteDepot(id: number): Observable<any> {
     const url = `${this.depotsUrl}/${id}`;
     return this.http.delete(url);
+  }
+
+  affecterArticleAunDepot(depot: Depot, article: Article): Observable<Depot> {
+    depot.articles.push(article);
+    const url = `${this.depotsUrl}/${depot.id}`;
+    return this.http.put<Depot>(url, depot);
   }
 }

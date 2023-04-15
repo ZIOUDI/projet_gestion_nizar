@@ -53,11 +53,11 @@ export class ArticlesListComponent implements OnInit {
   }
   
 
-  ouvrirPopup(articleID:number): void {
+  ouvrirPopup(article:Article): void {
     const dialogRef = this.dialog.open(PopupDepotsComponent, {
       width: '800px',
       height: '800px',
-      data: articleID
+      data: article
     });
 
     dialogRef.afterClosed().subscribe(result => {
