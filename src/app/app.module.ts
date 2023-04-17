@@ -81,6 +81,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';  
 import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
 import { PopupDepotsComponent } from './composants/composants/articles/popup-depots/popup-depots.component';
+import { LayoutComponent } from './composants/composants/layout/layout.component';
 
 
 
@@ -134,7 +135,8 @@ import { PopupDepotsComponent } from './composants/composants/articles/popup-dep
     MouvementsParDepotComponent,
     InventairesParDepotComponent,
     ArticlesComponent,
-    PopupDepotsComponent
+    PopupDepotsComponent,
+    LayoutComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,
