@@ -31,9 +31,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import {User} from './models/user';
 
 //composants
-import { SidebarComponent } from './composants/sidebar/sidebar.component';
-import { HeaderComponent } from './composants/header/header.component';
-import { FooterComponent } from './composants/footer/footer.component';
 import { PageDashboardComponent } from './composants/page-dashboard/page-dashboard.component';
 import { DepotsComponent } from './composants/composants/depots/depots.component';
 import { ProduitsComponent } from './composants/composants/produits/produits.component';
@@ -100,9 +97,6 @@ import { LayoutComponent } from './composants/composants/layout/layout.component
     PageInscriptionComponent,
     PageLoginComponent,
     PageDashboardComponent,
-    SidebarComponent,
-    HeaderComponent,
-    FooterComponent,
     DepotsComponent,
     ProduitsComponent,
     StocksComponent,
