@@ -26,7 +26,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { LayoutModule } from '@angular/cdk/layout';
-
+import { MatExpansionModule } from '@angular/material/expansion';
 // models
 import {User} from './models/user';
 
@@ -161,6 +161,7 @@ import { LayoutComponent } from './composants/composants/layout/layout.component
     MatSidenavModule,
     MatListModule,
     MatMenuModule,
+    MatExpansionModule,
     LayoutModule,
     CommonModule,
     MatDialogModule
