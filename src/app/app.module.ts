@@ -21,6 +21,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { LayoutModule } from '@angular/cdk/layout';
 
 // models
 import {User} from './models/user';
@@ -152,6 +157,11 @@ import { LayoutComponent } from './composants/composants/layout/layout.component
     MatTableModule,
     MatIconModule,
     MatPaginatorModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatMenuModule,
+    LayoutModule,
     CommonModule,
     MatDialogModule
 
