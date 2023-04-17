@@ -91,6 +91,28 @@
           "seuilMaximum": 30,
           "categorie": "Fruits",
           "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 31,
+          "nom": "Article 31",
+          "description": "Ceci est la description de l'article 31",
+          "prix": 10.99,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Catégorie 3",
+          "dateAjout": "2022-01-01T00:00:00Z"
+        },
+        {
+          "id": 32,
+          "nom": "Article 32",
+          "description": "Ceci est la description de l'article 32",
+          "prix": 15.99,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Catégorie 3",
+          "dateAjout": "2022-01-02T00:00:00Z"
         }
       ],
       "inventaires": [
