@@ -47,9 +47,14 @@
           <td>{{ user.name }}</td>
           <td>{{ user.email }}</td>
           <td>{{ user.role }}</td>
+           
           <td>
-            <button (click)="ouvrirPageEditUser( user.id )" class="btn btn-sm btn-outline-primary me-2">Modifier</button>
-            <button (click)="ouvrirPageDeleteUser( user.id )" class="btn btn-sm btn-outline-danger">Supprimer</button>
+            <button (click)="ouvrirPageEditUser(user.id)" class="mat-icon-button">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button (click)="ouvrirPageDeleteUser(user.id)" class="mat-icon-button">
+              <mat-icon>delete</mat-icon>
+            </button>
           </td>
         </tr>
       </tbody>
