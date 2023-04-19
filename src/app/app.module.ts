@@ -10,7 +10,7 @@ import { PageInscriptionComponent } from './composants/pages/page-inscription/pa
 import { PageLoginComponent } from './composants/pages/page-login/page-login.component';
 import { MaterialModule } from './material.model';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 // Utiliser les composants Material Design dans vos composants
@@ -27,6 +27,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
 // models
 import {User} from './models/user';
 
@@ -144,6 +145,7 @@ import { LayoutComponent } from './composants/composants/layout/layout.component
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
 
 
     MatInputModule,
@@ -158,7 +160,8 @@ import { LayoutComponent } from './composants/composants/layout/layout.component
     MatExpansionModule,
     LayoutModule,
     CommonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs

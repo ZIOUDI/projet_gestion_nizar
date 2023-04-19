@@ -1,16 +1,20 @@
-<div class="container my-container">
-<div class="card d-flex justify-content-center"></div>
-<div class="card-body">
-    <div class="mb-3">
-    <input type="email" class="form-control" placeholder="E-mail">
-  </div>
-  <div class="mb-3">
-    <input type="password" class="form-control"  placeholder="Mot de passe">
-  </div>
-  <div class="mb-3">
-     <button type="button" routerLink="/inscrire" class="btn btn-link">S'inscrire</button>
-
-    <button type="button" routerLink="/pageDashboard" class="btn btn-primary">Se connecter</button>
-  </div>
+<div class="container">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title class="title">Connexion</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="content">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Nom d'utilisateur</mat-label>
+          <input matInput formControlName="username" required>
+        </mat-form-field>
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Mot de passe</mat-label>
+          <input matInput type="password" formControlName="password" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" routerLink="/pageDashboard" type="submit" class="button">Connexion</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
 </div>
-  </div>
