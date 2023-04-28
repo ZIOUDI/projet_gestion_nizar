@@ -192,6 +192,17 @@
           "seuilMaximum": 50,
           "categorie": "Papeterie",
           "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 24,
+          "nom": "Article 24",
+          "description": "Description de l'article 24",
+          "prix": 5,
+          "quantite": 150,
+          "seuilMinimum": 25,
+          "seuilMaximum": 250,
+          "categorie": "Catégorie 2",
+          "dateAjout": "2023-04-15T12:00:00.000Z"
         }
       ],
       "inventaires": [
@@ -279,6 +290,39 @@
           "seuilMaximum": 150,
           "categorie": "Légumes",
           "dateAjout": "2023-03-10"
+        },
+        {
+          "id": 23,
+          "nom": "Article 23",
+          "description": "Description de l'article 23",
+          "prix": 15,
+          "quantite": 200,
+          "seuilMinimum": 30,
+          "seuilMaximum": 300,
+          "categorie": "Catégorie 1",
+          "dateAjout": "2023-04-15T12:00:00.000Z"
+        },
+        {
+          "id": 26,
+          "nom": "Article 26",
+          "description": "Description de l'article 26",
+          "prix": 8,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Catégorie 2",
+          "dateAjout": "2023-04-15T12:00:00.000Z"
+        },
+        {
+          "id": 28,
+          "nom": "Article 28",
+          "description": "Ceci est l'article numéro 28",
+          "prix": 10.99,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Catégorie A",
+          "dateAjout": "2022-05-01T00:00:00Z"
         }
       ],
       "inventaires": [

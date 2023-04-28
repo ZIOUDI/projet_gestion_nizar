@@ -1,9 +1,9 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav mat-primary" fixedInViewport
+<mat-sidenav-container class="sidenav-container ">
+  <mat-sidenav #drawer   class="sidenav mat-primary"  fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false" style="width: 330px;">
 
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar color="primary">Menu</mat-toolbar>
 
 
     <mat-nav-list>
@@ -96,7 +96,7 @@
         <!--         <mat-icon >qr_code_2</mat-icon>  -->
       </a>
 
-      <a mat-list-item href="/app-codes-barres">
+      <a mat-list-item href="/app-qr-codes">
         <mat-panel-title>QR Codes</mat-panel-title>
         <mat-icon class="mat-primary">qr_code_2</mat-icon>
       </a>

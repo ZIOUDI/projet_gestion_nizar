@@ -12,7 +12,6 @@ import { MaterialModule } from './material.model';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
 // Utiliser les composants Material Design dans vos composants
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
@@ -28,6 +27,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 // models
 import {User} from './models/user';
 
@@ -81,10 +81,13 @@ import { InventairesService } from './services/inventaires/inventaires.service';
 import { MouvementsService } from './services/mouvements/mouvements.service';
 import { ProduitService } from './services/produits/produit.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
 import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
 import { PopupDepotsComponent } from './composants/composants/articles/popup-depots/popup-depots.component';
 import { LayoutComponent } from './composants/composants/layout/layout.component';
+import { CodesBarresComponent } from './composants/composants/qr-codes/qr-codes.component';
+import { CodesBarresContenuComponent } from './composants/composants/qr-codes/qr-codes-contenu/qr-codes-contenu.component';
+import { PopupQrCodeArticlesComponent } from './composants/composants/qr-codes/popup-qr-code-articles/popup-qr-code-articles.component';
 
 
 
@@ -136,7 +139,10 @@ import { LayoutComponent } from './composants/composants/layout/layout.component
     InventairesParDepotComponent,
     ArticlesComponent,
     PopupDepotsComponent,
-    LayoutComponent
+    LayoutComponent,
+    CodesBarresComponent,
+    CodesBarresContenuComponent,
+    PopupQrCodeArticlesComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,
@@ -161,7 +167,8 @@ import { LayoutComponent } from './composants/composants/layout/layout.component
     LayoutModule,
     CommonModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
 
   ],
   providers: [   // --------------------------vos providers ou fournisseurs
