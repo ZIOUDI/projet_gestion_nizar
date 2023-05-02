@@ -24,22 +24,22 @@
             </tr>
         </tbody>
     </table>
-        <br> <br> 
-     
+        <br> <br>
+
         <div class="text-center mt-3">
-        <div>   
-              <h2>vous allez affacter l'article {{this.article.nom }} au dépot : {{  selectedDepot!.codeDepot }} - {{  selectedDepot!.nom }}  </h2>  
-         
+        <div>
+              <h2>vous allez affecter l'article {{this.article.nom }} au dépot : {{  selectedDepot!.codeDepot }} - {{  selectedDepot!.nom }}  </h2>
+
         </div>
         <br>
-  
+
     <div>
         <button class="btn btn-primary" [disabled]="!selectedDepot" (click)="affecterArticle(selectedDepot,this.article)">Affecter</button>
     </div>
 
-    <br> <br> 
-    <div *ngIf="successMessage" class="success-message">{{successMessage}}</div>
-    <div *ngIf="errorMessage" class="error-message">{{errorMessage}}</div>
+    <br> <br>
+    <div *ngIf="successMessage" class="success-message"><i class="bi bi-check-circle-fill"></i>   {{successMessage}}</div>
+    <div *ngIf="errorMessage" class="error-message"><i class="bi bi-exclamation-triangle-fill"></i>   {{errorMessage}}</div>
 
     </div>
 

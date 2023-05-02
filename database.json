@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Aymen Yahyaoui",
-      "email": "Aymen@gmail.com",
-      "role": "Administrateur",
-      "password": "admin"
-    },
-    {
       "id": 2,
       "name": "Mohamed Zidi",
       "email": "Zidi@gmail.com",
@@ -59,99 +52,12 @@
       "password": "d2bQaumqrVCF2AE",
       "phone": "065898989",
       "role": "Gestionnaire"
+    },
+    {
+      "id": 21
     }
   ],
   "depots": [
-    {
-      "id": 1,
-      "codeDepot": "Dep1015",
-      "nom": "SATUR",
-      "adresse": "5 rue de la rupublique Sfax",
-      "responsable": "Mezioudi Mehdi",
-      "capacite": 102,
-      "articles": [
-        {
-          "id": 1,
-          "nom": "Pomme",
-          "description": "Fruit rouge et rond",
-          "prix": 1.5,
-          "quantite": 20,
-          "seuilMinimum": 5,
-          "seuilMaximum": 50,
-          "categorie": "Fruits",
-          "dateAjout": "2023-04-06T08:00:00Z"
-        },
-        {
-          "id": 2,
-          "nom": "Poire",
-          "description": "Fruit jaune et ovale",
-          "prix": 2,
-          "quantite": 15,
-          "seuilMinimum": 3,
-          "seuilMaximum": 30,
-          "categorie": "Fruits",
-          "dateAjout": "2023-04-06T08:00:00Z"
-        },
-        {
-          "id": 31,
-          "nom": "Article 31",
-          "description": "Ceci est la description de l'article 31",
-          "prix": 10.99,
-          "quantite": 50,
-          "seuilMinimum": 10,
-          "seuilMaximum": 100,
-          "categorie": "Catégorie 3",
-          "dateAjout": "2022-01-01T00:00:00Z"
-        },
-        {
-          "id": 32,
-          "nom": "Article 32",
-          "description": "Ceci est la description de l'article 32",
-          "prix": 15.99,
-          "quantite": 100,
-          "seuilMinimum": 20,
-          "seuilMaximum": 200,
-          "categorie": "Catégorie 3",
-          "dateAjout": "2022-01-02T00:00:00Z"
-        }
-      ],
-      "inventaires": [
-        {
-          "id": 1,
-          "code": "INV001",
-          "quantite": 20,
-          "date": "2022-03-15T09:30:00Z",
-          "depotId": "1",
-          "codeInventaire": "INVT20220315"
-        },
-        {
-          "id": 2,
-          "code": "INV002",
-          "quantite": 15,
-          "date": "2022-03-16T14:45:00Z",
-          "depotId": "1",
-          "codeInventaire": "INVT20220316"
-        },
-        {
-          "id": 3,
-          "code": "INV003",
-          "quantite": 10,
-          "date": "2022-03-17T11:15:00Z",
-          "depotId": "1",
-          "codeInventaire": "INVT20220317"
-        },
-        {
-          "id": 4,
-          "code": "INV004",
-          "quantite": 5,
-          "date": "2022-03-18T16:00:00Z",
-          "depotId": "1",
-          "codeInventaire": "INVT20220318"
-        }
-      ],
-      "mouvements": [],
-      "couts": 0
-    },
     {
       "id": 2,
       "codeDepot": "Dep2088",
@@ -192,6 +98,28 @@
           "seuilMaximum": 50,
           "categorie": "Papeterie",
           "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 2,
+          "nom": "Poire",
+          "description": "Fruit jaune et ovale",
+          "prix": 2,
+          "quantite": 15,
+          "seuilMinimum": 3,
+          "seuilMaximum": 30,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
         }
       ],
       "inventaires": [
@@ -279,6 +207,28 @@
           "seuilMaximum": 150,
           "categorie": "Légumes",
           "dateAjout": "2023-03-10"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 3,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
         }
       ],
       "inventaires": [
@@ -453,6 +403,74 @@
           "seuilMaximum": 250,
           "categorie": "Catégorie 3",
           "dateAjout": "2022-01-05T00:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        }
+      ],
+      "inventaires": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 5,
+      "codeDepot": "10",
+      "nom": "depotf",
+      "adresse": "حي الغابات سبيطلة",
+      "responsable": "ons",
+      "capacite": 20,
+      "articles": [
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
         }
       ],
       "inventaires": [],
@@ -462,42 +480,6 @@
   ],
   "Mouvement": [],
   "entrees": [
-    {
-      "id": 1,
-      "code": "",
-      "produitId": "",
-      "quantite": 0,
-      "dateEntree": "2023-04-01T10:24:04.527Z",
-      "depotId": "",
-      "codeEntree": ""
-    },
-    {
-      "id": 2,
-      "code": "",
-      "produitId": "",
-      "quantite": 0,
-      "dateEntree": "2023-04-01T10:24:58.107Z",
-      "depotId": "",
-      "codeEntree": ""
-    },
-    {
-      "id": 3,
-      "code": "",
-      "produitId": "",
-      "quantite": 0,
-      "dateEntree": "2023-04-01T10:31:35.251Z",
-      "depotId": "",
-      "codeEntree": ""
-    },
-    {
-      "id": 4,
-      "code": "",
-      "produitId": "",
-      "quantite": 0,
-      "dateEntree": "2023-04-01T10:32:05.971Z",
-      "depotId": "",
-      "codeEntree": ""
-    },
     {
       "id": 5
     }

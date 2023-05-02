@@ -10,9 +10,7 @@ import { DepotsComponent } from '../depots.component';
   styleUrls: ['./depots-list.component.scss']
 })
 export class DepotsListComponent implements OnInit {
-nouveauDepot() {
-throw new Error('Method not implemented.');
-}
+
 
 
   depots!: Depot[];

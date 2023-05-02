@@ -1,56 +1,56 @@
 
-  
+
 
 <!DOCTYPE html>
 <html>
   <head>
      <!-- Ajouter les liens vers les fichiers CSS et JS de Bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-     integrity="sha512-LzUfQ2Ud8Bq3knWh5c5P5d87Bxj8DmWzPvKVhpt4grzpsAmfw8uonAfRiZ7rCZYr35Gnsx8uq3Y9y7QUu0FfIg==" 
+     integrity="sha512-LzUfQ2Ud8Bq3knWh5c5P5d87Bxj8DmWzPvKVhpt4grzpsAmfw8uonAfRiZ7rCZYr35Gnsx8uq3Y9y7QUu0FfIg=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" 
-    integrity="sha512-01DmGhTxQSP1mVZlxHpjW8fJhPpOFmTfxz+a9mPeW8gsVstgydZZDk/6e03pYw3q6i+lU6SZfUv7NkpQz1u5KQ==" 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"
+    integrity="sha512-01DmGhTxQSP1mVZlxHpjW8fJhPpOFmTfxz+a9mPeW8gsVstgydZZDk/6e03pYw3q6i+lU6SZfUv7NkpQz1u5KQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   </head>
   <body>
     <div class="container">
       <h1>Ajouter Produit</h1>
-      
 
-      
+
+
         <form (submit)="onSubmit()">
-         
-             
+
+
 
             <div class="form-group">
              <label for="id">Les IDs </label>
-            <!--  <input type="number" id="idProduit" name="id" [(ngModel)]="this.nouveauProduit.id" class="form-control"> -->
-           </div>    
-         
+             <input type="number" id="idProduit" name="id" (ngModel)="this.nouveauProduit.id" class="form-control">
+           </div>
+
            <div class="form-group">
              <label for="codeProduit">Code Dépôt</label>
-             <!-- <input type="text" id="codeProduit" name="codeProduit" [(ngModel)]="this.nouveauProduit.codeProduit" class="form-control"> -->
+             <input type="text" id="codeProduit" name="codeProduit" (ngModel)="this.nouveauProduit.codeProduit" class="form-control">
            </div>
             <div class="form-group">
              <label for="nom">Nom</label>
-             <!-- <input type="text" id="nomProduit" name="nom" [(ngModel)]="this.nouveauProduit.nom" class="form-control"> -->
+             <input type="text" id="nomProduit" name="nom" (ngModel)="this.nouveauProduit.nom" class="form-control">
            </div>
             <div class="form-group">
              <label for="description">description</label>
-             <!-- <input type="text" id="descriptionProduit" name="description" [(ngModel)]="this.nouveauProduit.description" class="form-control"> -->
+             <input type="text" id="descriptionProduit" name="description" (ngModel)="this.nouveauProduit.description" class="form-control">
            </div>
             <div class="form-group">
              <label for="prix">prix</label>
-            <!--  <input type="number" id="prixProduit" name="prix" [(ngModel)]="this.nouveauProduit.prix" class="form-control"> -->
+             <input type="number" id="prixProduit" name="prix" (ngModel)="this.nouveauProduit.prix" class="form-control">
            </div>
-     
+
 
         <br>
          <button type="submit" class="btn btn-primary">Créer Produit</button>
 
       </form>
-      
+
     </div>
   </body>
 </html>
