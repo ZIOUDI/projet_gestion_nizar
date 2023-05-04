@@ -2,12 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageDashboardComponent } from './composants/page-dashboard/page-dashboard.component';
 import { PageStatistiquesComponent } from './composants/pages/page-statistiques/page-statistiques.component';
-import { PageInscriptionComponent } from './composants/pages/page-inscription/page-inscription.component';
 import { PageLoginComponent } from './composants/pages/page-login/page-login.component';
 
 import { DepotsComponent } from './composants/composants/depots/depots.component';
-import { ProduitsComponent } from './composants/composants/produits/produits.component';
-import { StocksComponent } from './composants/composants/stocks/stocks.component';
+;
 import { EntreeComponent } from './composants/composants/entrees/entrees.component';
 
 import { SortieComponent } from './composants/composants/sorties/sorties.component';
@@ -33,12 +31,16 @@ import { DeleteDepotComponent } from './composants/composants/depots/delete-depo
 import { ArticlesParDepotComponent } from './composants/composants/depots/articles-par-depot/articles-par-depot.component';
 import { MouvementsParDepotComponent } from './composants/composants/depots/mouvements-par-depot/mouvements-par-depot.component';
 import { InventairesParDepotComponent } from './composants/composants/depots/inventaires-par-depot/inventaires-par-depot.component';
-import { ListProduitComponent } from './composants/composants/produits/list-produit/list-produit.component';
+import { PageInscriptionComponent } from './composants/pages/page-login/page-inscription/page-inscription.component';
+
+import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
+import { ArticlesComponent } from './composants/composants/articles/articles.component';
 import { CreateProduitComponent } from './composants/composants/produits/create-produit/create-produit.component';
 import { DeleteProduitComponent } from './composants/composants/produits/delete-produit/delete-produit.component';
 import { EditProduitComponent } from './composants/composants/produits/edit-produit/edit-produit.component';
-import { ArticlesComponent } from './composants/composants/articles/articles.component';
-import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
+import { ListProduitComponent } from './composants/composants/produits/list-produit/list-produit.component';
+import { ProduitsComponent } from './composants/composants/produits/produits.component';
+import { StocksComponent } from './composants/composants/stocks/stocks.component';
 import { CodesBarresComponent } from './composants/composants/qr-codes/qr-codes.component';
 import { CodesBarresContenuComponent } from './composants/composants/qr-codes/qr-codes-contenu/qr-codes-contenu.component';
 
