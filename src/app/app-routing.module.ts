@@ -39,6 +39,8 @@ import { DeleteProduitComponent } from './composants/composants/produits/delete-
 import { EditProduitComponent } from './composants/composants/produits/edit-produit/edit-produit.component';
 import { ArticlesComponent } from './composants/composants/articles/articles.component';
 import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
+import { CodesBarresComponent } from './composants/composants/qr-codes/qr-codes.component';
+import { CodesBarresContenuComponent } from './composants/composants/qr-codes/qr-codes-contenu/qr-codes-contenu.component';
 
 
 
@@ -174,10 +176,10 @@ const routes: Routes = [
     {
       path: 'delete-article/:id',
       component: DeleteDepotComponent,
-    } 
+    }
   ]
 },
- 
+
 
   {
     path: "app-sorties", component: SortieComponent,
@@ -200,7 +202,17 @@ const routes: Routes = [
         component: DeleteSortieComponent,
       }
     ]
-  }
+  },
+  { path: "app-qr-codes", component: CodesBarresComponent ,
+  children: [
+
+    {
+      path: '',
+      component: CodesBarresContenuComponent,
+    }
+  ]
+}
+
 
 ]
 @NgModule({
