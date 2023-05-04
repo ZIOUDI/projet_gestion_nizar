@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { ComposantsComponent } from './composants/composants.component';
 import { ServicesComponent } from './services/services.component';
 import { PagesComponent } from './composants/pages/pages.component';
-import { PageInscriptionComponent } from './composants/pages/page-inscription/page-inscription.component';
 import { PageLoginComponent } from './composants/pages/page-login/page-login.component';
 import { MaterialModule } from './material.model';
 import { HttpClientModule } from '@angular/common/http';
@@ -85,9 +84,11 @@ import { CommonModule } from '@angular/common';
 import { ArticlesListComponent } from './composants/composants/articles/articles-list/articles-list.component';
 import { PopupDepotsComponent } from './composants/composants/articles/popup-depots/popup-depots.component';
 import { LayoutComponent } from './composants/composants/layout/layout.component';
-import { CodesBarresComponent } from './composants/composants/qr-codes/qr-codes.component';
-import { CodesBarresContenuComponent } from './composants/composants/qr-codes/qr-codes-contenu/qr-codes-contenu.component';
 import { PopupQrCodeArticlesComponent } from './composants/composants/qr-codes/popup-qr-code-articles/popup-qr-code-articles.component';
+import { CodesBarresContenuComponent } from './composants/composants/qr-codes/qr-codes-contenu/qr-codes-contenu.component';
+import { CodesBarresComponent } from './composants/composants/qr-codes/qr-codes.component';
+import { PageInscriptionComponent } from './composants/pages/page-login/page-inscription/page-inscription.component';
+
 
 
 

@@ -1,30 +1,42 @@
 
+<div class="container mt-5" >
+ 
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow-sm rounded overflow-hidden">
+        <div class="card-body p-0">
+          <h1 class="text-center text-primary py-4">Bienvenue !</h1>
+          <form class="register-form px-4 pb-4" method="get" action="login.html">
+            
+            <div class="form-group">
+              <!-- <label for="email">Email :</label> -->
+              <div class="input-group">
+                <span class="input-group-text"><i class="material-icons">email</i></span>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Entrer l'Email">
+              </div>
+            </div>
+           <br>
+           
+            <div class="form-group">
+              <!-- <label for="password">Mot de passe :</label> -->
+              <div class="input-group">
+                <span class="input-group-text"><i class="material-icons">lock_open</i></span>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Enter le mot de passe">
+              </div>
+            </div>
+            <br>
 
-<div class="container">
-  <mat-card class="card">
-    <mat-card-header>
-      <mat-card-title class="title">Connexion</mat-card-title>
-    </mat-card-header>
+            <button type="submit" class="btn btn-primary btn-block"  routerLink="/pageDashboard" >Se Connecter</button>
+            <hr>
+            <br><a class="text-sm text-paleBlue" routerLink="/forget-pass">Mot de passe oublié ?</a>
+            <br><small class="text-gray-500">vous n'avez pas encore un compte? 
+              <br>
 
-    
-
-    <mat-card-content class="content">
-      
-      <div class="hero-section">
-        <h1 class="hero-title">StockIn</h1>
-      </div>
-
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
-        <mat-form-field class="field" appearance="fill">
-          <mat-label>Nom d'utilisateur</mat-label>
-          <input matInput formControlName="username" required>
-        </mat-form-field>
-        <mat-form-field class="field" appearance="fill">
-          <mat-label>Mot de passe</mat-label>
-          <input matInput type="password" formControlName="password" required>
-        </mat-form-field>
-        <button mat-raised-button color="primary" routerLink="/pageDashboard" type="submit" class="button">Connexion</button>
-      </form>
-    </mat-card-content>
-  </mat-card>
-</div>
+            </small><a class="text-sm text-paleBlue" routerLink="/inscrire">Inscrivez vous</a>
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
