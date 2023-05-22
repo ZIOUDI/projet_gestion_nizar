@@ -1,0 +1,51 @@
+
+<div>
+  <h3>Transférer des Articles:</h3>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nom</th>
+    
+      <th>Prix</th>
+      <th>Quantité</th>
+
+      <th>transférer article à un Dépot</th>
+    </tr>
+  </thead>
+  <tbody>
+
+       <tr *ngFor="let article of getArticlesForPage()">
+
+        <td>{{ article.id }}</td>
+        <td>{{ article.nom }}</td>
+       
+        <td>{{ article.prix }}</td>
+        <td>{{ article.quantite }}</td>
+    
+     
+
+        <td >
+            <button (click)="ouvrirPopup(article)" class="mat-icon-button custom-button">
+              <mat-icon>input</mat-icon>
+            </button>
+          </td>
+
+        
+
+    </tr>
+  </tbody>
+</table>
+
+  <div class="pagination">
+    <button *ngFor="let page of pages()" [class.active]="currentPage === page" (click)="currentPage = page">
+      {{ page }}
+    </button>
+  </div>
+
+
+
+
+
+</div>
