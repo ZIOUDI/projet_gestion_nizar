@@ -49,7 +49,20 @@ export class UserListComponent implements OnInit {
   ouvrirPageDeleteUser(id: number): void {
      this.router.navigate(['/app-users/delete-user', id]);
   }
+  search(searchTerm: string) {
+    this.UserService.searchArticles(searchTerm).subscribe(
+      users => this.users =users,
+      error => console.log(error)
+    );
+  }
 
+  onSearch(searchTerm: string) {
+    this.search(searchTerm);
+  }
+
+  onClear() {
+    this.search('');
+  }
   
 
 }

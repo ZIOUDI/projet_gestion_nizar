@@ -1,46 +1,9 @@
 {
   "users": [
     {
-      "id": 2,
-      "name": "Mohamed Zidi",
-      "email": "Zidi@gmail.com",
-      "role": "Manager de stock / Gestionnaires de produits",
-      "password": "manager"
-    },
-    {
-      "id": 3,
-      "name": "Zied Aloui",
-      "email": "Aloui@gmail.com",
-      "role": "Vendeur",
-      "password": "seller"
-    },
-    {
-      "id": 4,
-      "name": "Haithem Mednini",
-      "email": "Mednini@gmail.com",
-      "role": "Comptable",
-      "password": "accountant"
-    },
-    {
-      "id": 10,
-      "name": "zioudi",
-      "email": "zy.anas@gmail.com",
-      "password": "d2bQaumqrVCF2AE",
-      "phone": "2600110011",
-      "role": "Administrateur"
-    },
-    {
-      "id": 12,
-      "name": "zied",
-      "email": "ayadi@gmail.com",
-      "password": "d2bQaumqrVCF2AE",
-      "phone": "21111111",
-      "role": "Administrateur"
-    },
-    {
       "id": 15,
       "name": "Adrien",
-      "email": "abc@hotmail.com",
+      "email": "Adriencedriq@hotmail.com",
       "password": "d2bQaumqrVCF2AE",
       "phone": "2600110011",
       "role": "Administrateur"
@@ -48,125 +11,44 @@
     {
       "id": 20,
       "name": "Adrien",
-      "email": "adrr@hotmail.com",
+      "email": "adrrsidou11@hotmail.com",
       "password": "d2bQaumqrVCF2AE",
       "phone": "065898989",
       "role": "Gestionnaire"
     },
     {
-      "id": 21
+      "id": 7,
+      "name": "ahmed",
+      "email": "amineyedi90@gmail.com",
+      "password": "84564",
+      "phone": "21221954",
+      "role": "Gestionnaire"
+    },
+    {
+      "id": 2,
+      "name": "wael",
+      "email": "waelbelarbi@gmail.com",
+      "password": "65+695+6+5",
+      "phone": "56552265",
+      "role": "Gestionnaire"
+    },
+    {
+      "id": 19,
+      "name": "anis",
+      "email": "anismoulehi96@gmail.com",
+      "phone": "90125486",
+      "role": "Gestionnaire"
+    },
+    {
+      "id": 27,
+      "name": "nizar",
+      "email": "nizardabbabi90@gmail.com",
+      "password": "88466468464",
+      "phone": "28705608",
+      "role": "Administrateur"
     }
   ],
   "depots": [
-    {
-      "id": 2,
-      "codeDepot": "Dep2088",
-      "nom": "MAND",
-      "adresse": "9 rue de la rupublique Sfax",
-      "responsable": "Felhi Zied",
-      "capacite": 150,
-      "articles": [
-        {
-          "id": 3,
-          "nom": "Cahier",
-          "description": "Cahier 100 pages",
-          "prix": 2.5,
-          "quantite": 50,
-          "seuilMinimum": 10,
-          "seuilMaximum": 100,
-          "categorie": "Papeterie",
-          "dateAjout": "2023-04-06"
-        },
-        {
-          "id": 4,
-          "nom": "Stylo",
-          "description": "Stylo à bille noir",
-          "prix": 0.5,
-          "quantite": 100,
-          "seuilMinimum": 20,
-          "seuilMaximum": 200,
-          "categorie": "Papeterie",
-          "dateAjout": "2023-04-06"
-        },
-        {
-          "id": 5,
-          "nom": "Classeur",
-          "description": "Classeur à 4 anneaux",
-          "prix": 7,
-          "quantite": 20,
-          "seuilMinimum": 5,
-          "seuilMaximum": 50,
-          "categorie": "Papeterie",
-          "dateAjout": "2023-04-06"
-        },
-        {
-          "id": 1,
-          "nom": "Pomme",
-          "description": "Fruit rouge et rond",
-          "prix": 1.5,
-          "quantite": 20,
-          "seuilMinimum": 5,
-          "seuilMaximum": 50,
-          "categorie": "Fruits",
-          "dateAjout": "2023-04-06T08:00:00Z"
-        },
-        {
-          "id": 2,
-          "nom": "Poire",
-          "description": "Fruit jaune et ovale",
-          "prix": 2,
-          "quantite": 15,
-          "seuilMinimum": 3,
-          "seuilMaximum": 30,
-          "categorie": "Fruits",
-          "dateAjout": "2023-04-06T08:00:00Z"
-        }
-      ],
-      "inventaires": [
-        {
-          "id": 5,
-          "code": "INV005",
-          "quantite": 8,
-          "date": "2022-03-20T10:00:00Z",
-          "depotId": "2",
-          "codeInventaire": "INVT20220320"
-        },
-        {
-          "id": 6,
-          "code": "INV006",
-          "quantite": 12,
-          "date": "2022-03-21T14:30:00Z",
-          "depotId": "2",
-          "codeInventaire": "INVT20220321"
-        },
-        {
-          "id": 7,
-          "code": "INV007",
-          "quantite": 6,
-          "date": "2022-03-22T09:15:00Z",
-          "depotId": "2",
-          "codeInventaire": "INVT20220322"
-        },
-        {
-          "id": 8,
-          "code": "INV008",
-          "quantite": 18,
-          "date": "2022-03-23T16:45:00Z",
-          "depotId": "2",
-          "codeInventaire": "INVT20220323"
-        },
-        {
-          "id": 8,
-          "code": "INV008",
-          "quantite": 18,
-          "date": "2022-03-23T16:45:00Z",
-          "depotId": "2",
-          "codeInventaire": "INVT20220323"
-        }
-      ],
-      "mouvements": [],
-      "couts": 0
-    },
     {
       "id": 3,
       "codeDepot": "Dep5240",
@@ -229,6 +111,61 @@
           "seuilMaximum": 100,
           "categorie": "Papeterie",
           "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 3,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 4,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 3,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 21,
+          "nom": "Article 21",
+          "description": "Description de l'article 21",
+          "prix": 10,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Catégorie 1",
+          "dateAjout": "2023-04-15T12:00:00.000Z"
         }
       ],
       "inventaires": [
@@ -291,7 +228,7 @@
       "codeDepot": "Dep2006",
       "nom": "POTATES",
       "adresse": "23 rue de la paie Sfax",
-      "responsable": "Kefi Ali",
+      "responsable": "Kefi ",
       "capacite": 369,
       "articles": [
         {
@@ -425,6 +362,61 @@
           "seuilMaximum": 50,
           "categorie": "Fruits",
           "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 3,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 21,
+          "nom": "Article 21",
+          "description": "Description de l'article 21",
+          "prix": 10,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Catégorie 1",
+          "dateAjout": "2023-04-15T12:00:00.000Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 4,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-05-19T16:20:22.335Z"
         }
       ],
       "inventaires": [],
@@ -432,12 +424,58 @@
       "couts": 0
     },
     {
-      "id": 5,
-      "codeDepot": "10",
-      "nom": "depotf",
-      "adresse": "حي الغابات سبيطلة",
-      "responsable": "ons",
-      "capacite": 20,
+      "id": 8,
+      "codeDepot": "Dep2075",
+      "nom": "lait",
+      "adresse": "rue ibn jazzar kairouan",
+      "responsable": "mourad",
+      "capacite": 954,
+      "articles": [
+        {
+          "id": 2,
+          "nom": "Poire",
+          "description": "Fruit jaune et ovale",
+          "prix": 2,
+          "quantite": 15,
+          "seuilMinimum": 3,
+          "seuilMaximum": 30,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 3,
+          "nom": "Cahier",
+          "description": "Cahier 100 pages",
+          "prix": 2.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 4,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-05-19T16:14:42.613Z"
+        }
+      ],
+      "inventaires": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 9,
+      "codeDepot": "Dep226",
+      "nom": "Stylo",
+      "adresse": "cité ghabet sbeitla",
+      "responsable": "Nizar",
+      "capacite": 1546,
       "articles": [
         {
           "id": 1,
@@ -471,6 +509,129 @@
           "seuilMaximum": 50,
           "categorie": "Fruits",
           "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 4,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-05-19T16:27:02.873Z"
+        }
+      ],
+      "inventaires": [],
+      "mouvements": [],
+      "couts": 0
+    },
+    {
+      "id": 10,
+      "codeDepot": "",
+      "nom": "",
+      "adresse": "",
+      "responsable": "",
+      "capacite": 0,
+      "articles": [
+        {
+          "id": 2,
+          "nom": "Poire",
+          "description": "Fruit jaune et ovale",
+          "prix": 2,
+          "quantite": 15,
+          "seuilMinimum": 3,
+          "seuilMaximum": 30,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 5,
+          "nom": "Classeur",
+          "description": "Classeur à 4 anneaux",
+          "prix": 7,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 5,
+          "nom": "Classeur",
+          "description": "Classeur à 4 anneaux",
+          "prix": 7,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 4,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 100,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-04-06"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 1,
+          "nom": "Pomme",
+          "description": "Fruit rouge et rond",
+          "prix": 1.5,
+          "quantite": 20,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-04-06T08:00:00Z"
+        },
+        {
+          "id": 6,
+          "nom": "Tomate",
+          "description": "Tomates mûres et juteuses",
+          "prix": 2.5,
+          "quantite": 200,
+          "seuilMinimum": 20,
+          "seuilMaximum": 300,
+          "categorie": "Légumes",
+          "dateAjout": "2023-05-19T13:13:21.376Z"
+        },
+        {
+          "id": 10,
+          "nom": "Orange",
+          "description": "Fruit orange et rond",
+          "prix": 2.2,
+          "quantite": 30,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Fruits",
+          "dateAjout": "2023-05-19T14:13:46.638Z"
         }
       ],
       "inventaires": [],
@@ -487,44 +648,11 @@
   "produits": [],
   "articles": [
     {
-      "id": 1,
-      "nom": "Pomme",
-      "description": "Fruit rouge et rond",
-      "prix": 1.5,
-      "quantite": 20,
-      "seuilMinimum": 5,
-      "seuilMaximum": 50,
-      "categorie": "Fruits",
-      "dateAjout": "2023-04-06T08:00:00Z"
-    },
-    {
-      "id": 2,
-      "nom": "Poire",
-      "description": "Fruit jaune et ovale",
-      "prix": 2,
-      "quantite": 15,
-      "seuilMinimum": 3,
-      "seuilMaximum": 30,
-      "categorie": "Fruits",
-      "dateAjout": "2023-04-06T08:00:00Z"
-    },
-    {
-      "id": 3,
-      "nom": "Cahier",
-      "description": "Cahier 100 pages",
-      "prix": 2.5,
-      "quantite": 50,
-      "seuilMinimum": 10,
-      "seuilMaximum": 100,
-      "categorie": "Papeterie",
-      "dateAjout": "2023-04-06"
-    },
-    {
       "id": 4,
       "nom": "Stylo",
       "description": "Stylo à bille noir",
       "prix": 0.5,
-      "quantite": 100,
+      "quantite": 1000,
       "seuilMinimum": 20,
       "seuilMaximum": 200,
       "categorie": "Papeterie",
@@ -586,17 +714,6 @@
       "dateAjout": "2023-04-07"
     },
     {
-      "id": 10,
-      "nom": "Orange",
-      "description": "Fruit orange et rond",
-      "prix": 2.2,
-      "quantite": 30,
-      "seuilMinimum": 5,
-      "seuilMaximum": 50,
-      "categorie": "Fruits",
-      "dateAjout": "2023-04-07"
-    },
-    {
       "id": 11,
       "nom": "Feuilles de papier",
       "description": "Paquet de 100 feuilles de papier blanc",
@@ -619,17 +736,6 @@
       "dateAjout": "2023-04-08"
     },
     {
-      "id": 13,
-      "nom": "Gomme",
-      "description": "Gomme blanche pour effacer le crayon",
-      "prix": 0.3,
-      "quantite": 100,
-      "seuilMinimum": 10,
-      "seuilMaximum": 100,
-      "categorie": "Papeterie",
-      "dateAjout": "2023-04-08"
-    },
-    {
       "id": 14,
       "nom": "Courgette",
       "description": "Courgette verte et croquante",
@@ -637,17 +743,6 @@
       "quantite": 50,
       "seuilMinimum": 10,
       "seuilMaximum": 100,
-      "categorie": "Légumes",
-      "dateAjout": "2023-03-15"
-    },
-    {
-      "id": 15,
-      "nom": "Aubergine",
-      "description": "Aubergine violette et savoureuse",
-      "prix": 2.5,
-      "quantite": 35,
-      "seuilMinimum": 5,
-      "seuilMaximum": 50,
       "categorie": "Légumes",
       "dateAjout": "2023-03-15"
     },
@@ -883,48 +978,22 @@
       "dateAjout": "2022-01-06T00:00:00Z"
     },
     {
-      "id": 37,
-      "nom": "Article 37",
-      "description": "Ceci est la description de l'article 37",
-      "prix": 8.99,
-      "quantite": 150,
-      "seuilMinimum": 30,
-      "seuilMaximum": 300,
-      "categorie": "Catégorie 3",
-      "dateAjout": "2022-01-07T00:00:00Z"
+      "id": 11111,
+      "nom": "ghbnfs",
+      "description": "gfhbf",
+      "prix": "15d",
+      "quantite": "0bg",
+      "categorie": "gbf",
+      "dateAjout": "2023-05-19T16:11:12.013Z"
     },
     {
-      "id": 38,
-      "nom": "Article 38",
-      "description": "Description de l'article 38",
-      "prix": 10.99,
-      "quantite": 50,
-      "seuilMinimum": 10,
-      "seuilMaximum": 100,
-      "categorie": "Catégorie 3",
-      "dateAjout": "2023-04-15"
-    },
-    {
-      "id": 39,
-      "nom": "Article 39",
-      "description": "Description de l'article 39",
-      "prix": 15.99,
-      "quantite": 20,
-      "seuilMinimum": 5,
-      "seuilMaximum": 50,
-      "categorie": "Catégorie 4",
-      "dateAjout": "2023-04-15"
-    },
-    {
-      "id": 40,
-      "nom": "Article 40",
-      "description": "Description de l'article 40",
-      "prix": 20.99,
-      "quantite": 10,
-      "seuilMinimum": 2,
-      "seuilMaximum": 20,
-      "categorie": "Catégorie 5",
-      "dateAjout": "2023-04-15"
+      "id": 11112,
+      "nom": "6564",
+      "description": "46846",
+      "prix": "854651",
+      "quantite": "498646",
+      "categorie": "486444444444444",
+      "dateAjout": "2023-05-21T11:17:47.465Z"
     }
   ]
 }

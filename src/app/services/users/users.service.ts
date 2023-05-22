@@ -55,5 +55,7 @@ export class UserService {
     const url = `${this.usersUrl}/${id}`;
     return this.http.delete(url);
   }
-
+  searchArticles(searchTerm: string): Observable<User[]> {
+    return this.http.get<User[]>(`${this.usersUrl}?q=${searchTerm}`);
+  }
 }

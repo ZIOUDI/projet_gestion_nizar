@@ -88,6 +88,11 @@ import { PopupQrCodeArticlesComponent } from './composants/composants/qr-codes/p
 import { CodesBarresContenuComponent } from './composants/composants/qr-codes/qr-codes-contenu/qr-codes-contenu.component';
 import { CodesBarresComponent } from './composants/composants/qr-codes/qr-codes.component';
 import { PageInscriptionComponent } from './composants/pages/page-login/page-inscription/page-inscription.component';
+import { TransfereComponent } from './transfere/transfere.component';
+import { AjouttransfereComponent } from './transfere/ajouttransfere/ajouttransfere.component';
+import { HistoriqueDeTransfereComponent } from './transfere/historique-de-transfere/historique-de-transfere.component';
+import { BarreRechercherComponent } from './barre-rechercher/barre-rechercher.component';
+import { EditArticleComponent } from './composants/composants/articles/edit-article/edit-article.component';
 
 
 
@@ -100,6 +105,7 @@ import { PageInscriptionComponent } from './composants/pages/page-login/page-ins
     ServicesComponent,
     PagesComponent,
     PageInscriptionComponent,
+    EditArticleComponent,
     PageLoginComponent,
     PageDashboardComponent,
     DepotsComponent,
@@ -143,7 +149,11 @@ import { PageInscriptionComponent } from './composants/pages/page-login/page-ins
     LayoutComponent,
     CodesBarresComponent,
     CodesBarresContenuComponent,
-    PopupQrCodeArticlesComponent
+    PopupQrCodeArticlesComponent,
+    TransfereComponent,
+    AjouttransfereComponent,
+    HistoriqueDeTransfereComponent,
+    BarreRechercherComponent
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,

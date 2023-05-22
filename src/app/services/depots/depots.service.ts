@@ -62,4 +62,7 @@ export class DepotsService {
     const url = `${this.depotsUrl}/${depot.id}`;
     return this.http.put<Depot>(url, depot);
   }
+  searchArticles(searchTerm: string): Observable<Depot[]> {
+    return this.http.get<Depot[]>(`${this.depotsUrl}?q=${searchTerm}`)
+}
 }

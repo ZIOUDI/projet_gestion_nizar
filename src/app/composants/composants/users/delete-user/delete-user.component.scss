@@ -1,0 +1,30 @@
+.container {
+    margin-top: 5rem;
+    background-color: rgba(255, 255, 255, 0.925);
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    background-color: #ffffff;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .confirmation-text {
+    margin-bottom: 1rem;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn {
+    margin-right: 0.5rem;
+  }

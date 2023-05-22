@@ -21,7 +21,8 @@ export class ArticlesListComponent implements OnInit {
 
   pageSizeOptions = [5, 10, 20];
 
-  constructor(private articleService: ArticlesService,private dialog: MatDialog) { }
+  constructor(private articleService: ArticlesService,private dialog: MatDialog, private router: Router
+    ) { }
 
   ngOnInit() {
     console.log(' ArticlesListComponent - methode -  ngOnInit')
@@ -70,11 +71,27 @@ export class ArticlesListComponent implements OnInit {
 
 
 
-  modifierArticle(arg0: any) {
-    throw new Error('Method not implemented.');
+  modifierArticle(id: number): void {
+    this.router.navigate(['/app-articles/edit-article', id]);
   }
-  supprimerArticle(arg0: any) {
-    throw new Error('Method not implemented.');
+
+
+  supprimerArticle(id: number): void {
+     this.router.navigate(['/app-articles/delete-article', id]);
+  }
+  search(searchTerm: string) {
+    this.articleService.searchArticles(searchTerm).subscribe(
+      articles => this.articles = articles,
+      error => console.log(error)
+    );
+  }
+
+  onSearch(searchTerm: string) {
+    this.search(searchTerm);
+  }
+
+  onClear() {
+    this.search('');
   }
 
 }

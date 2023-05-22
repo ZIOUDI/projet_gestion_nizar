@@ -49,6 +49,22 @@ export class DepotsListComponent implements OnInit {
   supprimerDepot(id: number): void {
      this.router.navigate(['/app-depots/delete-depot', id]);
   }
+  search(searchTerm: string) {
+    this.depotsService.searchArticles(searchTerm).subscribe(
+      depots => this.depots = depots,
+      error => console.log(error)
+    );
+  }
+
+  onSearch(searchTerm: string) {
+    this.search(searchTerm);
+  }
+
+  onClear() {
+    this.search('');
+  }
+
+
 
 
 

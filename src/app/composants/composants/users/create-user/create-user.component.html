@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-     <!-- Ajouter les liens vers les fichiers CSS et JS de Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-     integrity="sha512-LzUfQ2Ud8Bq3knWh5c5P5d87Bxj8DmWzPvKVhpt4grzpsAmfw8uonAfRiZ7rCZYr35Gnsx8uq3Y9y7QUu0FfIg==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" 
-    integrity="sha512-01DmGhTxQSP1mVZlxHpjW8fJhPpOFmTfxz+a9mPeW8gsVstgydZZDk/6e03pYw3q6i+lU6SZfUv7NkpQz1u5KQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  </head>
-  <body>
-    <div class="container">
-      <h1>Ajouter Utilisateur</h1>
+<div class="container mt-5">
+  <h1>Ajouter Utilisateur</h1>
       <form (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="id">ID:</label>
@@ -38,8 +25,9 @@
           <label for="role">Rôle:</label>
           <input type="text" id="role" [(ngModel)]="role" name="role" class="form-control">
         </div>
-        <button type="submit" class="btn btn-primary">Ajouter  </button>
-      </form>
+        <br>
+        <div class="row"> <div class="col-9"></div>
+        <div class="col-3"><button type="submit" class="btn btn-primary">Ajouter</button></div> 
+       </div>      
+      <br> </form>
     </div>
-  </body>
-</html>

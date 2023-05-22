@@ -43,6 +43,12 @@ import { ProduitsComponent } from './composants/composants/produits/produits.com
 import { StocksComponent } from './composants/composants/stocks/stocks.component';
 import { CodesBarresComponent } from './composants/composants/qr-codes/qr-codes.component';
 import { CodesBarresContenuComponent } from './composants/composants/qr-codes/qr-codes-contenu/qr-codes-contenu.component';
+import { DetailsUserComponent } from './composants/composants/users/details-user/details-user.component';
+import { TransfereComponent } from './transfere/transfere.component';
+import { AjouttransfereComponent } from './transfere/ajouttransfere/ajouttransfere.component';
+import { HistoriqueDeTransfereComponent } from './transfere/historique-de-transfere/historique-de-transfere.component';
+import { EditArticleComponent } from './composants/composants/articles/edit-article/edit-article.component';
+import { DeleteArticleComponent } from './composants/composants/articles/delete-article/delete-article.component';
 
 
 
@@ -52,54 +58,68 @@ const routes: Routes = [
   { path: "pageDashboard", component: PageDashboardComponent },
   { path: "app-header-dashboard", component: HeaderDashboardComponent },
 
-  { path: "stat", component: PageStatistiquesComponent },
-
-  { path: "app-dashboards", component: PageDashboardComponent },
-  { path: "app-produits", component: ProduitsComponent ,
-  children: [
-
-    {
-      path: '',
-      component: ListProduitComponent,
-    },
-    {
-      path: 'app-create-produit',
-      component: CreateProduitComponent,
-    },
-    {
-      path: 'app-edit-produit/:id',
-      component: EditProduitComponent,
-    },
-    {
-      path: 'app-delete-produit/:id',
-      component: DeleteProduitComponent,
-    }
-  ]},
-  { path: "app-stocks", component: StocksComponent },
-  { path: "app-entrees", component: EntreeComponent ,
-  children: [
-
-    {
-      path: '',
-      component: EntreeListComponent,
-    },
-    {
-      path: 'app-create-entrees',
-      component: CreateEntreeComponent,
-    },
-    {
-      path: 'app-edit-entrees/:id',
-      component: EditEntreeComponent,
-    },
-    {
-      path: 'app-delete-entrees/:id',
-      component: DeleteEntreeComponent,
-    }
-  ]
-},
-  { path: "app-inventaires", component: InventairesComponent },
   {
-    path: "app-users", component: UsersComponent,
+    path: "app-transfere",
+    component: TransfereComponent,
+    children: [
+      {
+        path: 'transfere',
+        component: AjouttransfereComponent
+      },
+        { path: "historique-de-transfere", component: HistoriqueDeTransfereComponent },
+]
+    },
+{ path: "stat", component: PageStatistiquesComponent },
+
+{ path: "app-dashboards", component: PageDashboardComponent },
+{
+  path: "app-produits", component: ProduitsComponent,
+    children: [
+
+      {
+        path: '',
+        component: ListProduitComponent,
+      },
+      {
+        path: 'app-create-produit',
+        component: CreateProduitComponent,
+      },
+      {
+        path: 'app-edit-produit/:id',
+        component: EditProduitComponent,
+      },
+      {
+        path: 'app-delete-produit/:id',
+        component: DeleteProduitComponent,
+      }
+    ]
+},
+{ path: "app-stocks", component: StocksComponent },
+{
+  path: "app-entrees", component: EntreeComponent,
+    children: [
+
+      {
+        path: '',
+        component: EntreeListComponent,
+      },
+      {
+        path: 'app-create-entrees',
+        component: CreateEntreeComponent,
+      },
+      {
+        path: 'app-edit-entrees/:id',
+        component: EditEntreeComponent,
+      },
+      {
+        path: 'app-delete-entrees/:id',
+        component: DeleteEntreeComponent,
+      }
+    ]
+},
+{ path: "app-inventaires", component: InventairesComponent },
+{
+  path: "app-users", component: UsersComponent,
     children: [
 
       {
@@ -117,13 +137,18 @@ const routes: Routes = [
       {
         path: 'delete-user/:id',
         component: DeleteUserComponent,
+      },
+      {
+        path: 'detail-user/:id',
+        component: DetailsUserComponent,
       }
     ]
-  },
+},
 
 
 
-    { path: "app-depots", component: DepotsComponent ,
+{
+  path: "app-depots", component: DepotsComponent,
 
     children: [
 
@@ -156,35 +181,36 @@ const routes: Routes = [
         component: InventairesParDepotComponent,
       }
     ]
-  },
-
-
-  { path: "app-articles", component: ArticlesComponent ,
-
-  children: [
-
-    {
-      path: '',
-      component: ArticlesListComponent,
-    },
-    {
-      path: 'create-article',
-      component: CreateDepotComponent,
-    },
-    {
-      path: 'edit-article/:id',
-      component: EditDepotComponent,
-    },
-    {
-      path: 'delete-article/:id',
-      component: DeleteDepotComponent,
-    }
-  ]
 },
 
 
-  {
-    path: "app-sorties", component: SortieComponent,
+{
+  path: "app-articles", component: ArticlesComponent,
+
+    children: [
+
+      {
+        path: '',
+        component: ArticlesListComponent,
+      },
+      {
+        path: 'create-article',
+        component: CreateDepotComponent,
+      },
+      {
+        path: 'edit-article/:id',
+        component: EditArticleComponent
+      },
+      {
+        path: 'delete-article/:id',
+        component: DeleteArticleComponent
+      }
+    ]
+},
+
+
+{
+  path: "app-sorties", component: SortieComponent,
     children: [
 
       {
@@ -204,15 +230,16 @@ const routes: Routes = [
         component: DeleteSortieComponent,
       }
     ]
-  },
-  { path: "app-qr-codes", component: CodesBarresComponent ,
-  children: [
+},
+{
+  path: "app-qr-codes", component: CodesBarresComponent,
+    children: [
 
-    {
-      path: '',
-      component: CodesBarresContenuComponent,
-    }
-  ]
+      {
+        path: '',
+        component: CodesBarresContenuComponent,
+      }
+    ]
 }
 
 

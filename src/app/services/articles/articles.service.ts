@@ -34,6 +34,16 @@ export class ArticlesService {
 
   getArticles(): Observable<any> {
      return this.http.get<Article[]>(this.articlesUrl);
+    
 
   }
+  searchArticles(searchTerm: string): Observable<Article[]> {
+    return this.http.get<Article[]>(`${this.articlesUrl}?q=${searchTerm}`)
+}
+
+ // Récupère un Article par son id
+getById(id: number): Observable<Article> {
+  return this.http.get<Article>(`${this.articlesUrl}/${id}`);
+}
+
 }

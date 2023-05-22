@@ -1,19 +1,25 @@
-
-<div>
-  <h3>Liste des Articles   :</h3>
+<app-barre-rechercher (search)="onSearch($event)" (clear)="onClear()"></app-barre-rechercher>
+<div class="container mt-5">
+ 
+  <div class="row align-items-center">
+    <div class="col-sm-6 col-12 mb-4 mb-sm-0">
+        <!-- Title -->
+        <h1 class="h2 mb-0 ls-tight">Liste des Articles  </h1>
+    </div> <!-- Actions -->
+   
+</div> <!-- Nav -->
 
 <table class="table table-hover">
   <thead>
     <tr>
       <th>Id</th>
       <th>Nom</th>
-      <th>Description</th>
       <th>Prix</th>
       <th>Quantité</th>
-
       <th>Catégorie</th>
       <th>Date d'ajout</th>
       <th>Affecter article à un Dépot</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
@@ -22,7 +28,6 @@
 
         <td>{{ article.id }}</td>
         <td>{{ article.nom }}</td>
-        <td>{{ article.description }}</td>
         <td>{{ article.prix }}</td>
         <td>{{ article.quantite }}</td>
     
@@ -39,6 +44,7 @@
             <button (click)="modifierArticle(article.id)" class="mat-icon-button">
               <mat-icon>edit</mat-icon>
             </button>
+            &nbsp;
             <button (click)="supprimerArticle(article.id)" class="mat-icon-button">
               <mat-icon>delete</mat-icon>
             </button>

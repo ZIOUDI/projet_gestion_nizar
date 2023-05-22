@@ -42,6 +42,7 @@ export class PopupQrCodeArticlesComponent {
      const startIndex = (this.currentPage - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
     return this.articles.slice(startIndex, endIndex); 
+    
   }
   
 
@@ -76,6 +77,7 @@ export class PopupQrCodeArticlesComponent {
        
        // Retour du code SVG sous forme de chaîne de caractères
        return svgString;
+       
 
 }
 

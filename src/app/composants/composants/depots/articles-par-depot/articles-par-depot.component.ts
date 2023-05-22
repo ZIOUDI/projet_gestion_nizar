@@ -9,9 +9,9 @@ import { ArticlesService } from 'src/app/services/articles/articles.service';
   templateUrl: './articles-par-depot.component.html',
   styleUrls: ['./articles-par-depot.component.scss']
 })
-export class ArticlesParDepotComponent {
+export class ArticlesParDepotComponent{
 
-  displayedColumns: string[] = ['id', 'nom', 'description', 'prix', 'quantite', 'seuilMinimum', 'seuilMaximum', 'categorie', 'dateAjout'];
+  displayedColumns: string[] = ['id', 'nom', 'description', 'prix', 'quantite', 'categorie', 'dateAjout'];
 
   articles!: Article[];
   depotId!: number;
