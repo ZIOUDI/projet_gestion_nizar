@@ -37,17 +37,19 @@ export class PopupQrCodeArticlesComponent {
       });
   }
 
+  
+
   generateQRCodes() {
     for (let article of this.articles) {
-      let qrCodeData = `
-        Id: ${article.id}
-        Nom: ${article.nom}
-        Description: ${article.description}
-        Prix: ${article.prix}
-        Quantité: ${article.quantite}
-        Catégorie: ${article.categorie}
-        Date d'ajout: ${article.dateAjout.toString()}  // Conversion de la date en une chaîne de caractères
-      `;
+      let qrCodeData = JSON.stringify({
+        id: article.id,
+        nom: article.nom,
+        description: article.description,
+        prix: article.prix,
+        quantite: article.quantite,
+        categorie: article.categorie,
+        dateAjout: article.dateAjout.toString()
+      });
   
       QRCode.toDataURL(qrCodeData)
         .then(url => {
@@ -58,6 +60,7 @@ export class PopupQrCodeArticlesComponent {
         });
     }
   }
+  
 
   applyFilter() {
     if (!this.searchId) {
