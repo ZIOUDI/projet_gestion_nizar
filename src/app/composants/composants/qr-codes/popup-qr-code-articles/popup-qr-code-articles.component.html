@@ -1,94 +1,35 @@
-
-<table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th> </th>
-
-        <th>Code QR</th>
-
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let article of articles">
-        <td class="centered">{{ article.id }}</td>
-        <td class="centered"> </td>
-        <td>
-          <ng-container *ngIf="article.qrCodeUrl">
-            <img [src]="article.qrCodeUrl" alt="Code QR">
-          </ng-container>
-          <ng-container *ngIf="!article.qrCodeUrl">
-            Code QR non disponible
-          </ng-container>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<div class="container">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Les Articles en QR Code</mat-card-title>
+      </mat-card-header>
   
-
-  <div class="qr-code-container">
-    <canvas id="qr-code"></canvas>
-  </div>
-
-  <div class="pagination">
-    <button *ngFor="let page of pages()" [class.active]="currentPage === page" (click)="currentPage = page">
-      {{ page }}
-    </button>
-  </div>
-
-
-  <style>
-    .qr-code-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-    }
-
-    #qr-code {
-      height: 200px;
-      width: 200px;
-    }
-  </style>
-
-  <script>
-    // Récupération du canvas et du contexte de dessin
-    const canvas = document.getElementById("qr-code");
-    const ctx = canvas.getContext("2d");
-
-    function displayQrCode(articleId) {
-      // Recherche de l'article correspondant à l'ID cliqué
-      const article = getArticleById(articleId);
-
-      // Configuration des paramètres du code QR
-      const qr = qrcode(0, "L");
-      qr.addData(article.id);
-      qr.make();
-
-      // Génération du code QR avec le module qrcode-generator
-      const cellSize = 2;
-      const margin = 2;
-      const size = qr.getModuleCount() * cellSize + 2 * margin;
-      canvas.width = size;
-      canvas.height = size;
-
-      const cells = qr.modules;
-      cells.forEach((row, rowIndex) => {
-        row.forEach((cell, columnIndex) => {
-          if (cell) {
-            ctx.fillRect(
-              margin + columnIndex * cellSize,
-              margin + rowIndex * cellSize,
-              cellSize,
-              cellSize
-            );
-          }
-        });
-      });
-    }
-
-    function getArticleById(articleId) {
-      // Recherche de l'article dans la liste
-      return articles.find((article) => article.id === articleId);
-    }
-  </script>
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput type="text" [(ngModel)]="searchId" placeholder="Rechercher par ID d'article" (input)="applyFilter()">
+        </mat-form-field>
+  
+         <table mat-table class="mat-elevation-z8" [dataSource]="filteredArticles">
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> Id </th>
+          <td mat-cell *matCellDef="let article"> {{ article.id }} </td>
+        </ng-container>
+  
+        <ng-container matColumnDef="qrCodeUrl">
+          <th mat-header-cell *matHeaderCellDef> Code QR </th>
+          <td mat-cell *matCellDef="let article">
+            <ng-container *ngIf="article.qrCodeUrl">
+              <img [src]="article.qrCodeUrl" alt="Code QR">
+            </ng-container>
+            <ng-container *ngIf="!article.qrCodeUrl">
+              Code QR non disponible
+            </ng-container>
+          </td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="['id', 'qrCodeUrl']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['id', 'qrCodeUrl'];"></tr>
+      </table>
+    </mat-card-content>
+</mat-card>
+</div>

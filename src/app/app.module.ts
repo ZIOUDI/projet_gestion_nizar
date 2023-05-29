@@ -93,6 +93,7 @@ import { AjouttransfereComponent } from './transfere/ajouttransfere/ajouttransfe
 import { HistoriqueDeTransfereComponent } from './transfere/historique-de-transfere/historique-de-transfere.component';
 import { BarreRechercherComponent } from './barre-rechercher/barre-rechercher.component';
 import { EditArticleComponent } from './composants/composants/articles/edit-article/edit-article.component';
+import { FilterByIdPipe } from './pipes/filter-by-id.pipe';
 
 
 
@@ -153,7 +154,8 @@ import { EditArticleComponent } from './composants/composants/articles/edit-arti
     TransfereComponent,
     AjouttransfereComponent,
     HistoriqueDeTransfereComponent,
-    BarreRechercherComponent
+    BarreRechercherComponent,
+    FilterByIdPipe
   ],
   imports: [     // --------------------------vos imports
     BrowserModule,

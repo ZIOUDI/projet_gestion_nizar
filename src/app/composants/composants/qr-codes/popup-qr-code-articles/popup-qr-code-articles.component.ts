@@ -1,11 +1,11 @@
-import { Component, Inject } from '@angular/core';
+import { Component} from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import * as JsBarcode from 'jsbarcode';
 import { Article } from 'src/app/models/article';
 import { ArticlesService } from 'src/app/services/articles/articles.service';
- 
 import QRCode from 'qrcode';
 
+ 
 @Component({
   selector: 'app-popup-qr-code-articles',
   templateUrl: './popup-qr-code-articles.component.html',
@@ -16,29 +16,26 @@ export class PopupQrCodeArticlesComponent {
   articles!: Article[];  // votre liste d'articles
   currentPage: number = 1; // la page actuelle (par défaut, la première page)
   itemsPerPage: number = 10; // nombre d'articles par page
-
   pageSizeOptions = [5, 10, 20];
-
   getArticlesForPages!: Article[];
   articlesParPages!: number[];
+  searchId: string = '';
+  filteredArticles: Article[] = [];
 
   constructor(
     public dialogRef: MatDialogRef<PopupQrCodeArticlesComponent>,
-    //@Inject(MAT_DIALOG_DATA) public article: Article,
-    private  articleService: ArticlesService
+    private articleService: ArticlesService
   ) { }
-
-   
 
   ngOnInit() {
     this.articleService.getArticles()
       .subscribe(articles => {
         console.log('-----PopupQrCodeArticlesComponent ----  ngOnInit() ---------- ')
         this.articles = articles;
+        this.filteredArticles = articles;
         this.generateQRCodes();
       });
   }
- 
 
   generateQRCodes() {
     for (let article of this.articles) {
@@ -61,40 +58,17 @@ export class PopupQrCodeArticlesComponent {
         });
     }
   }
-  
-  
-  
-  
 
-
-  getArticlesForPage() {
-    return this.getArticlesForPages
-     const startIndex = (this.currentPage - 1) * this.itemsPerPage;
-    const endIndex = startIndex + this.itemsPerPage;
-    return this.articles.slice(startIndex, endIndex);
-
-  }
-
-
-
-
-  pages() {
-    return this.articlesParPages;
-
-     const pagesCount = Math.ceil(this.articles.length / this.itemsPerPage);
-    const pages = [];
-    for (let i = 1; i <= pagesCount; i++) {
-      pages.push(i);
+  applyFilter() {
+    if (!this.searchId) {
+      this.filteredArticles = [...this.articles];
+    } else {
+      this.filteredArticles = this.articles.filter(article =>
+        article.id.toString().includes(this.searchId.toString())
+        
+        );
     }
-    return pages;
   }
-
-
-
-
-
   
-
-
 
 }
