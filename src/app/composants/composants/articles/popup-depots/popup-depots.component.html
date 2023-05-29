@@ -28,8 +28,18 @@
 
         <div class="text-center mt-3">
         <div>
-              <h2>vous allez affecter l'article {{this.article.nom }} ( en unité : {{article.quantiteAffectee}}) au dépot : {{  selectedDepot!.codeDepot }} - {{  selectedDepot!.nom }}  </h2>
-
+ 
+              <h2>
+                vous allez affecter l'article
+                <span style="color: blue">{{this.article.nom}}</span>
+                (en unité : 
+                <span style="color: blue">{{article.quantiteAffectee}}</span>)
+                au dépot :
+                <span style="color: blue">{{selectedDepot!.codeDepot}} </span> 
+                 - 
+                <span style="color: blue">{{selectedDepot!.nom}} </span>
+              </h2>
+              
         </div>
         <br>
 
@@ -49,7 +59,7 @@
            <br>
            <br>
 
-          <button class="btn btn-primary btn-sm" [disabled]="!selectedDepot.codeDepot" (click)="affecterArticle(selectedDepot, this.article)">Affecter</button>
+          <button class="btn btn-primary btn-sm" [disabled]="!(selectedDepot.codeDepot && article.quantiteAffectee)" (click)="affecterArticle(selectedDepot, this.article)">Affecter</button>
 
 
        

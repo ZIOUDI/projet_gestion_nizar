@@ -487,6 +487,18 @@
           "seuilMaximum": 200,
           "categorie": "Papeterie",
           "dateAjout": "2023-05-19T16:14:42.613Z"
+        },
+        {
+          "id": 14,
+          "nom": "Courgette",
+          "description": "Courgette verte et croquante",
+          "prix": 1.5,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Légumes",
+          "dateAjout": "2023-05-29T17:16:25.346Z",
+          "quantiteAffectee": 5
         }
       ],
       "inventaires": [],
@@ -591,6 +603,18 @@
           "categorie": "Légumes",
           "dateAjout": "2023-05-29T17:07:35.944Z",
           "quantiteAffectee": 6
+        },
+        {
+          "id": 11,
+          "nom": "Feuilles de papier",
+          "description": "Paquet de 100 feuilles de papier blanc",
+          "prix": 4,
+          "quantite": 50,
+          "seuilMinimum": 10,
+          "seuilMaximum": 100,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-05-29T17:11:22.514Z",
+          "quantiteAffectee": 3
         }
       ],
       "inventaires": [],
@@ -782,11 +806,12 @@
       "nom": "Feuilles de papier",
       "description": "Paquet de 100 feuilles de papier blanc",
       "prix": 4,
-      "quantite": 50,
+      "quantite": 47,
       "seuilMinimum": 10,
       "seuilMaximum": 100,
       "categorie": "Papeterie",
-      "dateAjout": "2023-04-08"
+      "dateAjout": "2023-05-29T17:11:22.514Z",
+      "quantiteAffectee": 3
     },
     {
       "id": 12,
@@ -805,11 +830,12 @@
       "nom": "Courgette",
       "description": "Courgette verte et croquante",
       "prix": 1.5,
-      "quantite": 50,
+      "quantite": 45,
       "seuilMinimum": 10,
       "seuilMaximum": 100,
       "categorie": "Légumes",
-      "dateAjout": "2023-03-15"
+      "dateAjout": "2023-05-29T17:16:25.346Z",
+      "quantiteAffectee": 5
     },
     {
       "id": 16,
