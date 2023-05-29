@@ -3,7 +3,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import * as JsBarcode from 'jsbarcode';
 import { Article } from 'src/app/models/article';
 import { ArticlesService } from 'src/app/services/articles/articles.service';
-import  QRCode  from 'qrcode-generator';
+ 
+import QRCode from 'qrcode';
 
 @Component({
   selector: 'app-popup-qr-code-articles',
@@ -27,16 +28,43 @@ export class PopupQrCodeArticlesComponent {
     private  articleService: ArticlesService
   ) { }
 
+   
+
   ngOnInit() {
-
-
     this.articleService.getArticles()
       .subscribe(articles => {
         console.log('-----PopupQrCodeArticlesComponent ----  ngOnInit() ---------- ')
-
         this.articles = articles;
+        this.generateQRCodes();
       });
   }
+ 
+
+  generateQRCodes() {
+    for (let article of this.articles) {
+      let qrCodeData = `
+        Id: ${article.id}
+        Nom: ${article.nom}
+        Description: ${article.description}
+        Prix: ${article.prix}
+        Quantité: ${article.quantite}
+        Catégorie: ${article.categorie}
+        Date d'ajout: ${article.dateAjout.toString()}  // Conversion de la date en une chaîne de caractères
+      `;
+  
+      QRCode.toDataURL(qrCodeData)
+        .then(url => {
+          article.qrCodeUrl = url; // Ajoutez une propriété qrCodeUrl à votre interface Article pour stocker l'URL du code QR
+        })
+        .catch(error => {
+          console.error('Erreur lors de la génération du code QR :', error);
+        });
+    }
+  }
+  
+  
+  
+  
 
 
   getArticlesForPage() {
@@ -65,23 +93,7 @@ export class PopupQrCodeArticlesComponent {
 
 
 
-  displayCodeBar(article: Article): string {
-
-    console.log('---------------displayCodeBar --------------')
-
-       // Création de l'objet QRCode avec les données de l'article
-       const qr = QRCode(0, 'L');
-       qr.addData(JSON.stringify(article));
-       qr.make();
-
-       // Récupération de l'image du QR code en format SVG
-       const svgString = qr.createSvgTag();
-
-       // Retour du code SVG sous forme de chaîne de caractères
-       return svgString;
-
-
-}
+  
 
 
 

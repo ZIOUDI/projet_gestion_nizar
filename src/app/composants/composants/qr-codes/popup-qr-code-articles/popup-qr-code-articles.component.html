@@ -2,25 +2,18 @@
     <thead>
       <tr>
         <th>Id</th>
-        <th>Nom</th>
-        <th>Description</th>
-        <th>Prix</th>
-        <th>Quantité</th>
-
-        <th>Catégorie</th>
-        <th>Date d'ajout</th>
+         <th>Code QR</th>
        </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let article of articles  " (click)="displayCodeBar(article)">
+      <tr *ngFor="let article of articles  " >
         <td>{{ article.id }}</td>
-        <td>{{ article.nom }}</td>
-        <td>{{ article.description }}</td>
-        <td>{{ article.prix }}</td>
-        <td>{{ article.quantite }}</td>
-
-        <td>{{ article.categorie }}</td>
-        <td>{{ article.dateAjout  | date }}</td>
+        
+        <td>
+            <img *ngIf="article.qrCodeUrl" [src]="article.qrCodeUrl" alt="Code QR">
+            <span *ngIf="!article.qrCodeUrl">Code QR non disponible</span>
+          </td>
+          
       </tr>
     </tbody>
   </table>
