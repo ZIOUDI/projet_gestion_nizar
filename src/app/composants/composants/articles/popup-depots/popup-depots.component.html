@@ -26,8 +26,8 @@
     </table>
         <br> <br>
 
-        <div class="text-center mt-3">
-        <div>
+        <div class="text-center mt-3"  >
+        <div  *ngIf="(selectedDepot.codeDepot && article.quantiteAffectee)">
  
               <h2>
                 vous allez affecter l'article

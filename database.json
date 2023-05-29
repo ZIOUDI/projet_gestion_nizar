@@ -615,6 +615,18 @@
           "categorie": "Papeterie",
           "dateAjout": "2023-05-29T17:11:22.514Z",
           "quantiteAffectee": 3
+        },
+        {
+          "id": 16,
+          "nom": "Brosse à dents",
+          "description": "Brosse à dents souple",
+          "prix": 2,
+          "quantite": 30,
+          "seuilMinimum": 5,
+          "seuilMaximum": 50,
+          "categorie": "Hygiène bucco-dentaire",
+          "dateAjout": "2023-05-29T17:27:50.831Z",
+          "quantiteAffectee": 4
         }
       ],
       "inventaires": [],
@@ -842,11 +854,12 @@
       "nom": "Brosse à dents",
       "description": "Brosse à dents souple",
       "prix": 2,
-      "quantite": 30,
+      "quantite": 26,
       "seuilMinimum": 5,
       "seuilMaximum": 50,
       "categorie": "Hygiène bucco-dentaire",
-      "dateAjout": "2023-04-08"
+      "dateAjout": "2023-05-29T17:27:50.831Z",
+      "quantiteAffectee": 4
     },
     {
       "id": 17,
