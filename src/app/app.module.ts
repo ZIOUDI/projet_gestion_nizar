@@ -99,7 +99,7 @@ import { EditArticleComponent } from './composants/composants/articles/edit-arti
 
 
 @NgModule({
-  declarations: [ // --------------------------vos composants
+  declarations: [
     AppComponent,
     ComposantsComponent,
     ServicesComponent,

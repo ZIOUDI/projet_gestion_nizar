@@ -20,7 +20,7 @@ export class PopupQrCodeArticlesComponent {
 
   getArticlesForPages!: Article[];
   articlesParPages!: number[];
- 
+
   constructor(
     public dialogRef: MatDialogRef<PopupQrCodeArticlesComponent>,
     //@Inject(MAT_DIALOG_DATA) public article: Article,
@@ -28,11 +28,13 @@ export class PopupQrCodeArticlesComponent {
   ) { }
 
   ngOnInit() {
- 
+
 
     this.articleService.getArticles()
       .subscribe(articles => {
-        this.articles = articles;      
+        console.log('-----PopupQrCodeArticlesComponent ----  ngOnInit() ---------- ')
+
+        this.articles = articles;
       });
   }
 
@@ -41,10 +43,10 @@ export class PopupQrCodeArticlesComponent {
     return this.getArticlesForPages
      const startIndex = (this.currentPage - 1) * this.itemsPerPage;
     const endIndex = startIndex + this.itemsPerPage;
-    return this.articles.slice(startIndex, endIndex); 
-    
+    return this.articles.slice(startIndex, endIndex);
+
   }
-  
+
 
 
 
@@ -56,7 +58,7 @@ export class PopupQrCodeArticlesComponent {
     for (let i = 1; i <= pagesCount; i++) {
       pages.push(i);
     }
-    return pages; 
+    return pages;
   }
 
 
@@ -66,21 +68,21 @@ export class PopupQrCodeArticlesComponent {
   displayCodeBar(article: Article): string {
 
     console.log('---------------displayCodeBar --------------')
- 
+
        // Création de l'objet QRCode avec les données de l'article
        const qr = QRCode(0, 'L');
        qr.addData(JSON.stringify(article));
        qr.make();
-   
+
        // Récupération de l'image du QR code en format SVG
        const svgString = qr.createSvgTag();
-       
+
        // Retour du code SVG sous forme de chaîne de caractères
        return svgString;
-       
+
 
 }
 
-  
+
 
 }
