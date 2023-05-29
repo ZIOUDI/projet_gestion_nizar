@@ -1,22 +1,30 @@
+
 <table class="table table-hover">
     <thead>
       <tr>
         <th>Id</th>
-         <th>Code QR</th>
-       </tr>
+        <th> </th>
+
+        <th>Code QR</th>
+
+      </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let article of articles  " >
-        <td>{{ article.id }}</td>
-        
+      <tr *ngFor="let article of articles">
+        <td class="centered">{{ article.id }}</td>
+        <td class="centered"> </td>
         <td>
-            <img *ngIf="article.qrCodeUrl" [src]="article.qrCodeUrl" alt="Code QR">
-            <span *ngIf="!article.qrCodeUrl">Code QR non disponible</span>
-          </td>
-          
+          <ng-container *ngIf="article.qrCodeUrl">
+            <img [src]="article.qrCodeUrl" alt="Code QR">
+          </ng-container>
+          <ng-container *ngIf="!article.qrCodeUrl">
+            Code QR non disponible
+          </ng-container>
+        </td>
       </tr>
     </tbody>
   </table>
+  
 
   <div class="qr-code-container">
     <canvas id="qr-code"></canvas>
