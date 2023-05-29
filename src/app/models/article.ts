@@ -1,5 +1,6 @@
 export class Article {
   qrCodeUrl!: string;
+  quantiteAffectee!: 0;
   constructor(
     public id: number,
     public nom: string,

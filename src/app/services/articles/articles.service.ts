@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Article } from 'src/app/models/article';
+import { switchMap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +28,10 @@ export class ArticlesService {
   updateArticle(id: number, value: any): Observable<Object> {
     return this.http.put(`${this.articlesUrl}/${id}`, value);
   }
+
+  
+  
+  
 
   deleteArticle(id: number): Observable<any> {
     return this.http.delete(`${this.articlesUrl}/${id}`, { responseType: 'text' });

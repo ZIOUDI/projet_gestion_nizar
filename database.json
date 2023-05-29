@@ -166,6 +166,18 @@
           "seuilMaximum": 200,
           "categorie": "Catégorie 1",
           "dateAjout": "2023-04-15T12:00:00.000Z"
+        },
+        {
+          "id": 4,
+          "nom": "Stylo",
+          "description": "Stylo à bille noir",
+          "prix": 0.5,
+          "quantite": 1000,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-05-29T17:02:27.814Z",
+          "quantiteAffectee": 19
         }
       ],
       "inventaires": [
@@ -417,6 +429,18 @@
           "seuilMaximum": 200,
           "categorie": "Papeterie",
           "dateAjout": "2023-05-19T16:20:22.335Z"
+        },
+        {
+          "id": 8,
+          "nom": "Poivron",
+          "description": "Poivrons rouges, verts et jaunes",
+          "prix": 3,
+          "quantite": 100,
+          "seuilMinimum": 10,
+          "seuilMaximum": 150,
+          "categorie": "Légumes",
+          "dateAjout": "2023-05-29T17:03:38.044Z",
+          "quantiteAffectee": 18
         }
       ],
       "inventaires": [],
@@ -531,6 +555,42 @@
           "seuilMaximum": 200,
           "categorie": "Papeterie",
           "dateAjout": "2023-05-19T16:27:02.873Z"
+        },
+        {
+          "id": 6,
+          "nom": "Tomate",
+          "description": "Tomates mûres et juteuses",
+          "prix": 2.5,
+          "quantite": 200,
+          "seuilMinimum": 20,
+          "seuilMaximum": 300,
+          "categorie": "Légumes",
+          "dateAjout": "2023-05-29T17:03:20.735Z",
+          "quantiteAffectee": 16
+        },
+        {
+          "id": 12,
+          "nom": "Crayon à papier",
+          "description": "Crayon à papier HB",
+          "prix": 0.2,
+          "quantite": 200,
+          "seuilMinimum": 20,
+          "seuilMaximum": 200,
+          "categorie": "Papeterie",
+          "dateAjout": "2023-05-29T17:05:53.007Z",
+          "quantiteAffectee": 12
+        },
+        {
+          "id": 7,
+          "nom": "Concombre",
+          "description": "Concombres frais et croquants",
+          "prix": 1.5,
+          "quantite": 150,
+          "seuilMinimum": 15,
+          "seuilMaximum": 250,
+          "categorie": "Légumes",
+          "dateAjout": "2023-05-29T17:07:35.944Z",
+          "quantiteAffectee": 6
         }
       ],
       "inventaires": [],
@@ -652,11 +712,12 @@
       "nom": "Stylo",
       "description": "Stylo à bille noir",
       "prix": 0.5,
-      "quantite": 1000,
+      "quantite": 981,
       "seuilMinimum": 20,
       "seuilMaximum": 200,
       "categorie": "Papeterie",
-      "dateAjout": "2023-04-06"
+      "dateAjout": "2023-05-29T17:02:27.814Z",
+      "quantiteAffectee": 19
     },
     {
       "id": 5,
@@ -674,33 +735,36 @@
       "nom": "Tomate",
       "description": "Tomates mûres et juteuses",
       "prix": 2.5,
-      "quantite": 200,
+      "quantite": 184,
       "seuilMinimum": 20,
       "seuilMaximum": 300,
       "categorie": "Légumes",
-      "dateAjout": "2023-03-01"
+      "dateAjout": "2023-05-29T17:03:20.735Z",
+      "quantiteAffectee": 16
     },
     {
       "id": 7,
       "nom": "Concombre",
       "description": "Concombres frais et croquants",
       "prix": 1.5,
-      "quantite": 150,
+      "quantite": 144,
       "seuilMinimum": 15,
       "seuilMaximum": 250,
       "categorie": "Légumes",
-      "dateAjout": "2023-03-05"
+      "dateAjout": "2023-05-29T17:07:35.944Z",
+      "quantiteAffectee": 6
     },
     {
       "id": 8,
       "nom": "Poivron",
       "description": "Poivrons rouges, verts et jaunes",
       "prix": 3,
-      "quantite": 100,
+      "quantite": 82,
       "seuilMinimum": 10,
       "seuilMaximum": 150,
       "categorie": "Légumes",
-      "dateAjout": "2023-03-10"
+      "dateAjout": "2023-05-29T17:03:38.044Z",
+      "quantiteAffectee": 18
     },
     {
       "id": 9,
@@ -729,11 +793,12 @@
       "nom": "Crayon à papier",
       "description": "Crayon à papier HB",
       "prix": 0.2,
-      "quantite": 200,
+      "quantite": 188,
       "seuilMinimum": 20,
       "seuilMaximum": 200,
       "categorie": "Papeterie",
-      "dateAjout": "2023-04-08"
+      "dateAjout": "2023-05-29T17:05:53.007Z",
+      "quantiteAffectee": 12
     },
     {
       "id": 14,
